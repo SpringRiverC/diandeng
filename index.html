@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <meta name="theme-color" content="#1f3a5f">
-<title>低压电工证 · 离线刷题</title>
+<title>低压电工证 · 题库训练</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
@@ -58,6 +58,8 @@ transition:.15s;display:flex;gap:10px;align-items:flex-start}
 .wrongitem:last-child{border:0}
 .wrongitem .e{color:#6b7c8f;font-size:12px;margin-top:4px}
 .hidden{display:none}
+.hbtn{border:1px solid #d3dfee;background:#eef3fa;color:#1f3a5f;border-radius:9px;padding:6px 12px;font-size:13px;cursor:pointer;margin-right:10px;line-height:1}
+.hbtn:active{background:#d6e2f0}
 .foot{text-align:center;color:#9aa9b8;font-size:11px;margin-top:18px;line-height:1.8}
 </style>
 <link rel="manifest" href="manifest.webmanifest">
@@ -70,7 +72,7 @@ transition:.15s;display:flex;gap:10px;align-items:flex-start}
 <body>
 <div class="wrap">
   <div class="hero">
-    <h1>低压电工证 · 离线刷题</h1>
+    <h1>低压电工证 · 题库训练</h1>
     <p>364道核心题 · 已按2026年新规校正 · 自动记错题 · 断网可用</p>
   </div>
   <div id="app"></div>
@@ -124,7 +126,7 @@ function renderQ(){
   var modName = '';
   MODS.forEach(function(m){ if(m[0]===q.m) modName = m[1]; });
   var h = '<div class="bar"><i style="width:'+pct+'%"></i></div>';
-  h += '<div class="qmeta"><span>第 '+(S.i+1)+' / '+n+' 题</span><span class="tag">'+q.t+' · '+modName+'</span></div>';
+  h += '<div class="qmeta"><span><button class="hbtn" onclick="renderHome()">‹ 主页</button>第 '+(S.i+1)+' / '+n+' 题</span><span class="tag">'+q.t+' · '+modName+'</span></div>';
   h += '<div class="card"><div class="qtext">'+q.q+'</div>';
   if(q.t==='判断'){
     h += '<button class="opt" id="o0" onclick="pick(0,\'√\')"><b>A</b><span>正确 √</span></button>';
