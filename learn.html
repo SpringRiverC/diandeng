@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>零基础入门 · 低压电工十二讲</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:#eef2f7;color:#22303f;font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:14px 14px 40px}
+.hero{background:linear-gradient(135deg,#1f3a5f,#2e6da4);color:#fff;border-radius:16px;padding:20px 18px;box-shadow:0 6px 18px rgba(31,58,95,.25)}
+.hero h1{margin:0 0 6px;font-size:20px}
+.hero p{margin:0;font-size:13px;opacity:.9}
+.toc{background:#fff;border-radius:14px;padding:14px 16px;margin-top:14px;box-shadow:0 2px 10px rgba(31,58,95,.08)}
+.toc h2{margin:0 0 8px;font-size:15px;color:#1f3a5f}
+.toc a{display:block;color:#2e6da4;text-decoration:none;font-size:14px;padding:5px 0;border-bottom:1px dashed #e6edf5}
+.toc a:last-child{border:0}
+.card{background:#fff;border-radius:14px;padding:16px 16px 6px;margin-top:14px;box-shadow:0 2px 10px rgba(31,58,95,.08)}
+.card h2{margin:0 0 4px;font-size:17px;color:#1f3a5f}
+.card .no{display:inline-block;background:#1f3a5f;color:#fff;border-radius:6px;font-size:11px;padding:1px 7px;margin-right:7px;vertical-align:2px}
+.card p{margin:10px 0;font-size:15px}
+.card b{color:#c0392b}
+.key{background:#eaf4ff;border-left:4px solid #2e6da4;border-radius:8px;padding:10px 12px;margin:12px 0;font-size:14.5px}
+.key em{font-style:normal;font-weight:700;color:#1f3a5f}
+.warn{background:#fff4e5;border-left:4px solid #e08b1e;border-radius:8px;padding:10px 12px;margin:12px 0;font-size:14.5px}
+.ana{background:#f2f7f2;border-left:4px solid #4a8f52;border-radius:8px;padding:10px 12px;margin:12px 0;font-size:14.5px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+th,td{border:1px solid #dbe5f0;padding:7px 8px;text-align:left}
+th{background:#f3f7fc;color:#1f3a5f}
+.svg{background:#f8fbfe;border:1px solid #e2ecf6;border-radius:10px;padding:6px;margin:12px 0;text-align:center}
+.svg svg{max-width:100%;height:auto}
+.back{display:inline-block;margin:18px 0 0;background:#1f3a5f;color:#fff;text-decoration:none;border-radius:10px;padding:10px 16px;font-size:14px}
+.foot{text-align:center;color:#9aa9b8;font-size:11px;margin-top:18px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>零基础入门 · 低压电工十二讲</h1>
+    <p>先看懂，再去背题 —— 每讲 3 分钟，看完再看题库</p>
+  </div>
+
+  <div class="toc">
+    <h2>目录</h2>
+    <a href="#l0">第 0 讲　电到底在“流”什么</a>
+    <a href="#l1">第 1 讲　电压、电流、电阻、功率（水塔类比）</a>
+    <a href="#l2">第 2 讲　直流和交流，50Hz 是什么</a>
+    <a href="#l3">第 3 讲　火线、零线、地线</a>
+    <a href="#l4">第 4 讲　单相 220V 是怎么来的</a>
+    <a href="#l5">第 5 讲　三相四线到底是什么（重点）</a>
+    <a href="#l6">第 6 讲　三相五线，工地为什么用五线</a>
+    <a href="#l7">第 7 讲　空开、漏保、熔断器、接触器、热继电器</a>
+    <a href="#l8">第 8 讲　电动机为什么有三根线，星三角是什么</a>
+    <a href="#l9">第 9 讲　接线常识：插座左零右火、开关接火线</a>
+    <a href="#l10">第 10 讲　人为什么会电死，怎么救</a>
+    <a href="#l11">第 11 讲　考证路线图，怎么用这套题库</a>
+  </div>
+
+  <div class="card" id="l0">
+    <h2><span class="no">0</span>电到底在“流”什么</h2>
+    <p>导线里有大量自由电子，平时乱跑。一旦给它一个“推力”，电子就会整体朝一个方向慢慢移动，这个有秩序的移动就是<b>电流</b>。</p>
+    <p>注意两个坑：</p>
+    <p>1）电子移动得很慢（每秒几毫米），但“推力”传递得极快，差不多是光速。所以你一合闸，灯立刻就亮，不是因为电子跑得快，而是因为整条导线里的电子<b>同时</b>开始动。</p>
+    <p>2）电流的方向，物理上规定为<b>正电荷流动的方向</b>，正好和电子实际移动方向相反。考试里按“正电荷方向”记就行。</p>
+    <div class="key"><em>记住这句：</em>电流是电荷有规则的定向移动，方向按正电荷走的方向算。</div>
+  </div>
+
+  <div class="card" id="l1">
+    <h2><span class="no">1</span>电压、电流、电阻、功率</h2>
+    <div class="ana">
+      <b>把电想成自来水：</b><br>
+      水塔的水位高度差 = <b>电压 U</b>（单位 伏 V）——没有高度差，水不会流<br>
+      水管里流过的水量 = <b>电流 I</b>（单位 安 A）<br>
+      水管粗细、有没有堵 = <b>电阻 R</b>（单位 欧 Ω）<br>
+      水做功的本领 = <b>功率 P</b>（单位 瓦 W）
+    </div>
+    <p>三个基本公式，背下来就够用了：</p>
+    <table>
+      <tr><th>公式</th><th>含义</th><th>例子</th></tr>
+      <tr><td>I = U ÷ R</td><td>欧姆定律：电压越大电流越大，电阻越大电流越小</td><td>220V ÷ 44Ω = 5A</td></tr>
+      <tr><td>P = U × I</td><td>功率 = 电压乘电流</td><td>220V × 5A = 1100W</td></tr>
+      <tr><td>W = P × t</td><td>电能 = 功率乘时间（1 度电 = 1kW 用 1 小时）</td><td>1000W 用 2 小时 = 2 度</td></tr>
+    </table>
+    <div class="key"><em>记住这句：</em>电压是“推力”，电流是“流量”，电阻是“阻力”，功率是“干活的本事”。</div>
+  </div>
+
+  <div class="card" id="l2">
+    <h2><span class="no">2</span>直流和交流，50Hz 是什么</h2>
+    <p><b>直流（DC）</b>：电流方向始终不变。电池、手机充电宝、光伏板输出的都是直流。</p>
+    <p><b>交流（AC）</b>：电流方向和大小按正弦规律来回变。我们家里的电就是交流。</p>
+    <p><b>50Hz</b> 意思是：每秒钟方向变化 50 个完整周期（一正一反算一个周期）。所以一秒钟里，电流方向实际改变了 100 次。</p>
+    <p>为什么要用交流？因为交流可以用<b>变压器</b>轻松升压降压——远距离输电升到几十万伏减少损耗，到小区再降回 220V/380V。这是直流做不到的（现在有特高压直流，但那是另一套技术）。</p>
+    <div class="key"><em>记住这句：</em>我国工频交流是 50Hz，一秒钟 50 个周期，电流方向变了 100 次。</div>
+  </div>
+
+  <div class="card" id="l3">
+    <h2><span class="no">3</span>火线、零线、地线</h2>
+    <p>三根线，各干各的活：</p>
+    <table>
+      <tr><th>线</th><th>颜色（标准）</th><th>作用</th><th>带电吗</th></tr>
+      <tr><td><b>火线 L</b></td><td>黄、绿、红（三相各一色）</td><td>送电的“高压侧”，对地有 220V 电位</td><td>带电，碰了会触电</td></tr>
+      <tr><td><b>零线 N</b></td><td>淡蓝色</td><td>回路的“返回通道”，正常情况下对地电压接近 0</td><td>正常不带电，但零线断了会带电！</td></tr>
+      <tr><td><b>地线 PE</b></td><td>黄绿双色</td><td>保护线，把设备外壳接到大地</td><td>平时没电流，只在漏电时救命</td></tr>
+    </table>
+    <div class="warn">⚠️ 零线不是“没电的线”。零线断线、相线碰壳、接线错误时，零线和外壳都可能带 220V。所以检修一定要<b>先断电、再验电</b>，不能靠“摸一下”判断。</div>
+    <p><b>地线为什么救命：</b>洗衣机外壳如果漏电，没有地线时，人一碰，电流就从“火线→人→大地”走，人就是那根导线。有了地线，外壳通过低电阻的 PE 线直接连到大地，漏电电流大部分走地线，同时漏电保护器检测到电流差立刻跳闸。</p>
+    <div class="key"><em>记住这句：</em>火线送电、零线回路、地线保命；黄绿双色永远是地线，绝不能当零线用。</div>
+  </div>
+
+  <div class="card" id="l4">
+    <h2><span class="no">4</span>单相 220V 是怎么来的</h2>
+    <p>发电厂发出的是三相电。到了小区变压器，把其中<b>一根火线 + 一根零线</b>引到你家，就是<b>单相 220V</b>。</p>
+    <p>所谓 220V，是指火线对零线（也就是对地）的电压，叫<b>相电压</b>。</p>
+    <p>家里的插座：两孔的是“火线 + 零线”，三孔多一个“地线”。</p>
+    <div class="key"><em>记住这句：</em>220V 是火线对零线的电压（相电压），一根火线一根零线就叫单相。</div>
+  </div>
+
+  <div class="card" id="l5">
+    <h2><span class="no">5</span>三相四线到底是什么（重点）</h2>
+    <p>你说的“三相四电”，标准说法是<b>三相四线</b>（不是“四电”）。它是低压配电里最常见的一种供电方式。</p>
+    <p><b>四根线 = 三根火线（L1、L2、L3，也叫 A、B、C 相）+ 一根零线（N）。</b></p>
+    <div class="svg">
+      <svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="460" height="250" fill="none"/>
+        <circle cx="230" cy="118" r="7" fill="#1f3a5f"/>
+        <text x="230" y="142" font-size="12" fill="#1f3a5f" text-anchor="middle">中性点 N</text>
+        <line x1="230" y1="118" x2="120" y2="45" stroke="#c0392b" stroke-width="2.5"/>
+        <line x1="230" y1="118" x2="340" y2="45" stroke="#e0a800" stroke-width="2.5"/>
+        <line x1="230" y1="118" x2="230" y2="230" stroke="#2e7d32" stroke-width="2.5"/>
+        <text x="112" y="36" font-size="13" fill="#c0392b">L1 黄</text>
+        <text x="330" y="36" font-size="13" fill="#b8860b">L2 绿</text>
+        <text x="238" y="245" font-size="13" fill="#2e7d32">L3 红</text>
+        <line x1="230" y1="118" x2="60" y2="150" stroke="#1f78b4" stroke-width="2.5" stroke-dasharray="5 4"/>
+        <text x="18" y="146" font-size="13" fill="#1f78b4">N 淡蓝</text>
+        <text x="150" y="180" font-size="12" fill="#666">三根火线相位各差 120°</text>
+      </svg>
+    </div>
+    <p><b>为什么三根火线？</b>三相电的三个电压波形互相错开 120°。这样三根轮流“出力”，合成后的总功率是恒定的、不会忽大忽小——所以电动机转起来很平稳，不像单相电机那样需要电容启动。</p>
+    <p><b>为什么是 380V？</b>两根火线之间的电压叫<b>线电压</b>，它等于相电压乘 1.732（√3）：</p>
+    <table>
+      <tr><th>测量对象</th><th>电压</th><th>名称</th></tr>
+      <tr><td>任一根火线 ↔ 零线</td><td>220V</td><td>相电压</td></tr>
+      <tr><td>两根火线之间</td><td>220 × 1.732 ≈ 380V</td><td>线电压</td></tr>
+    </table>
+    <p>所以：<b>家用 220V 是“一火一零”，电动机 380V 是“两根火线”。</b>这也是为什么三相电动机接三根火线就能转——它不需要零线。</p>
+    <div class="warn">⚠️ 三相四线里，零线是<b>三根火线共用</b>的。三相负载不平衡时，零线里会有电流流过；一旦零线断了，原本 220V 的相电压可能升到 380V，会把家里电器全部烧毁。所以规范要求零线上不得装熔断器和开关，并且要做重复接地。</div>
+    <div class="key"><em>记住这句：</em>三相四线 = 三火一零；火对零 220V，火对火 380V；零线共用、不能断、不能装开关和熔断器。</div>
+  </div>
+
+  <div class="card" id="l6">
+    <h2><span class="no">6</span>三相五线，工地为什么用五线</h2>
+    <p>三相四线里，零线 N 和保护线 PE 是<b>同一根</b>（叫 PEN 线）。这就带来风险：一旦 PEN 线断，设备外壳就会带 220V 电压，人一碰就触电。</p>
+    <p><b>三相五线</b>就是把它们分开：三根火线 + 一根零线 N + 一根地线 PE，一共五根。这就是<b>TN-S 系统</b>。</p>
+    <table>
+      <tr><th>系统</th><th>线</th><th>特点</th></tr>
+      <tr><td>TN-C</td><td>三相四线</td><td>PE 与 N 合一（PEN），省钱但安全性差</td></tr>
+      <tr><td>TN-S</td><td>三相五线</td><td>PE 与 N 全程分开，最安全，施工现场强制要求</td></tr>
+      <tr><td>TN-C-S</td><td>前四后五</td><td>进户前合一，进户后分开；<b>分开后绝对不能再合并</b></td></tr>
+    </table>
+    <p>所以工地上看到“五根线”，不是多此一举，而是把“保命的那根”单独留出来了。</p>
+    <div class="key"><em>记住这句：</em>TN-S 就是五线、PE 与 N 分开；施工单位必须用 TN-S 并装漏电保护器。</div>
+  </div>
+
+  <div class="card" id="l7">
+    <h2><span class="no">7</span>空开、漏保、熔断器、接触器、热继电器</h2>
+    <p>这五个是最常见的低压电器，各管一件事：</p>
+    <table>
+      <tr><th>元件</th><th>管什么</th><th>怎么认</th></tr>
+      <tr><td><b>熔断器（保险丝）</b></td><td>短路保护（过载也能保一部分）</td><td>玻璃管/瓷管，里面有熔体，烧断就换</td></tr>
+      <tr><td><b>断路器（空开）</b></td><td>过载 + 短路，还能当开关用</td><td>带手柄，跳闸后往上推复位</td></tr>
+      <tr><td><b>漏电保护器（漏保）</b></td><td>漏电保护（30mA、0.1 秒内跳闸）</td><td>上面有<b>试验按钮 T</b>，每月按一次</td></tr>
+      <tr><td><b>交流接触器</b></td><td>用小电流控制大电流，能远距离操作</td><td>线圈通电吸合，有“吧嗒”声</td></tr>
+      <tr><td><b>热继电器</b></td><td>电动机过载保护</td><td>整定电流调到电机额定电流的 1.0～1.15 倍</td></tr>
+    </table>
+    <div class="warn">⚠️ 三个死记点：① 熔体<b>不能用铜丝代替</b>；② 漏保的试验按钮<b>不能代替</b>定期检测动作电流；③ 装了漏保也<b>不能</b>省掉接地（接零）。</div>
+    <div class="key"><em>记住这句：</em>熔断器管短路、热继电器管过载、漏保管漏电、接触器管控制、断路器两样都管。</div>
+  </div>
+
+  <div class="card" id="l8">
+    <h2><span class="no">8</span>电动机为什么有三根线，星三角是什么</h2>
+    <p>三相异步电动机的定子里有三个绕组，接三根火线，通入三相电后产生<b>旋转磁场</b>，转子被“拖着”转起来。转子的转速永远比磁场慢一点点，这个差值叫<b>转差率</b>（一般 2%～5%），没有转速差就没有转矩。</p>
+    <p>按公式，同步转速 n₁ = 60f ÷ p（f 是频率 50Hz，p 是磁极对数）：两极电机 3000 转/分，四极 1500 转/分。</p>
+    <p><b>星三角（Y-△）启动</b>：电机直接启动时电流能达到额定电流的 4～7 倍，电网受不了。所以启动时先把绕组接成星形（Y），每相电压降到 1/√3，启动电流降到 1/3；转起来以后再切换成三角形（△）正常运行。</p>
+    <div class="warn">⚠️ 代价：星形接法时启动转矩也降到 1/3（转矩和电压平方成正比）。所以只适合<b>轻载启动</b>，重载设备不能用。</div>
+    <div class="key"><em>记住这句：</em>Y-△ 启动：电流降到 1/3，转矩也降到 1/3；正反转必须加电气互锁，否则两相短路。</div>
+  </div>
+
+  <div class="card" id="l9">
+    <h2><span class="no">9</span>接线常识：插座左零右火、开关接火线</h2>
+    <p>这几条是实操考试必考、生活里也直接保命的常识：</p>
+    <table>
+      <tr><th>位置</th><th>正确做法</th><th>为什么</th></tr>
+      <tr><td>三孔插座</td><td>面对插座：<b>左零、右火、上接地</b></td><td>接反了，关灯后灯头或外壳仍带电</td></tr>
+      <tr><td>照明开关</td><td>接在<b>火线</b>上</td><td>开关接零线时，关灯后灯头仍带电，换灯泡会触电</td></tr>
+      <tr><td>螺口灯座</td><td>螺纹口接零线，中心触点接火线</td><td>换灯泡时手指容易碰到螺纹口</td></tr>
+      <tr><td>PE 与 N</td><td>全程分开，<b>绝不能合并</b></td><td>合并会让外壳带 220V</td></tr>
+    </table>
+    <div class="key"><em>记住这句：</em>开关断火不断零，插座左零右火，地线永远单独走。</div>
+  </div>
+
+  <div class="card" id="l10">
+    <h2><span class="no">10</span>人为什么会电死，怎么救</h2>
+    <p>电死人的不是电压，是<b>电流</b>，而电流大小由电压和人体电阻决定（I = U ÷ R）。干燥皮肤电阻约 1000～2000Ω 以上，一湿就掉到几百欧，所以潮湿环境特别危险。</p>
+    <p>几个要背的数字：感知电流（男 1.1mA）、<b>摆脱电流（男 16mA）</b>、<b>致命电流 50mA</b>。50mA 就能引起心室颤动。</p>
+    <p><b>触电急救的顺序，一步都不能错：</b></p>
+    <p>① 先断电（拉闸、拔插头）→ ② 不能断电就用干燥木棒/绝缘物挑开电线，救护者站在绝缘垫上 → ③ 判断意识和呼吸（轻拍双肩、大声呼唤）→ ④ 无呼吸立即心肺复苏：<b>按压 30 次 + 吹气 2 次</b>，按压深度 5～6cm，频率 100～120 次/分 → ⑤ 有 AED 尽早除颤 → ⑥ 持续抢救，直到专业人员接手。</p>
+    <div class="warn">⚠️ 三个绝对禁止：<b>绝对不能徒手去拉触电者</b>；不能给昏迷者喂水喂药；不能因为“瞳孔散大”就放弃抢救。</div>
+    <div class="key"><em>记住这句：</em>先断电再救人；30:2、5～6cm、100～120 次/分。</div>
+  </div>
+
+  <div class="card" id="l11">
+    <h2><span class="no">11</span>考证路线图，怎么用这套题库</h2>
+    <p><b>第一步：确认条件</b>——年满 18 周岁、不超过法定退休年龄、身体健康（无心脏病、癫痫、眩晕症等妨碍作业的疾病）。低压电工<b>已不要求学历</b>（2026 年 6 月 1 日起施行的新规）。</p>
+    <p><b>第二步：找培训机构报名</b>——当地应急管理局公布的培训机构，参加安全技术培训（初次取证实操培训 48 学时）。</p>
+    <p><b>第三步：考理论</b>——计算机考试，百分制，<b>80 分合格</b>。理论过了才能考实操。</p>
+    <p><b>第四步：考实操</b>——4 个科目，每个科目抽 1 道题，权重 20% / 20% / 40% / 20%，也是 80 分合格，设“否决项”，否决项没过直接不合格。</p>
+    <table>
+      <tr><th>科目</th><th>考什么</th><th>权重</th></tr>
+      <tr><td>科目一</td><td>安全用具使用（万用表、兆欧表、钳形表、绝缘手套、接地线、标示牌）</td><td>20%</td></tr>
+      <tr><td>科目二</td><td>作业现场安全隐患排除</td><td>20%</td></tr>
+      <tr><td>科目三</td><td>安全操作技术（电动机接线、正反转、导线连接、配电柜操作）</td><td><b>40%</b></td></tr>
+      <tr><td>科目四</td><td>作业现场应急处置（触电急救、心肺复苏、灭火器）</td><td>20%</td></tr>
+    </table>
+    <p><b>第五步：拿证与维持</b>——证书有效期 6 年，全国有效。到期前 6 个月内完成理论培训和理论考试，届满前 60 日内申请<b>换证</b>（旧的“每 3 年复审”已取消）。</p>
+    <div class="key"><em>怎么用题库：</em>先按本页顺序读一遍 → 打开刷题页，按 M1～M8 模块过一遍（错了就看解析）→ 用“随机抽 30 题”模拟 → 考前只看错题和速记页。</div>
+    <a class="back" href="index.html">← 去刷题</a>
+  </div>
+
+  <div class="foot">依据《低压电工作业人员安全技术培训大纲和考核标准》(2025) 与应急管理部令第 19 号（2026-06-01 施行）编写<br>仅供零基础入门理解，考试以当地应急管理部门题库为准</div>
+</div>
+</body>
+</html>

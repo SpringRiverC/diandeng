@@ -95,7 +95,8 @@ function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){ var j=Math.floo
 
 function renderHome(){
   var w = wrongIds().length;
-  var h = '<div class="card"><h2>开始练习</h2>';
+  var h = '<div class="card" style="padding:0"><a class="btn" href="learn.html" style="display:block;text-align:center;text-decoration:none;margin:14px">📖 零基础入门 · 十二讲（建议先看）</a></div>';
+  h += '<div class="card"><h2>开始练习</h2>';
   h += '<button class="btn" onclick="start(\'all\')">顺序练习 · 全部 364 题</button>';
   h += '<button class="btn ghost" onclick="start(\'rand\')">随机抽 30 题 · 模拟考</button>';
   h += '<button class="btn '+(w?'warn':'ghost')+'" onclick="start(\'wrong\')">错题重做（'+w+' 题）</button>';
