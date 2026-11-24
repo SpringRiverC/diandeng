@@ -1,5 +1,5 @@
 /* 低压电工证刷题 - 离线缓存 */
-const CACHE = 'diandeng-0c8cf1a5';
+const CACHE = 'diandeng-4e9a0ee8';
 const ASSETS = ['./', './index.html', './learn.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', function (e) {

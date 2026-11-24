@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>零基础入门 · 低压电工十二讲</title>
+<title>零基础入门 · 低压电工十六讲</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{margin:0;background:#eef2f7;color:#22303f;font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
@@ -31,16 +31,40 @@ th{background:#f3f7fc;color:#1f3a5f}
 .svg svg{max-width:100%;height:auto}
 .back{display:inline-block;margin:18px 0 0;background:#1f3a5f;color:#fff;text-decoration:none;border-radius:10px;padding:10px 16px;font-size:14px}
 .foot{text-align:center;color:#9aa9b8;font-size:11px;margin-top:18px;line-height:1.8}
+  .sub{font-size:16px;color:#1f3a5f;margin:18px 0 8px;padding-left:8px;border-left:4px solid #2e6da4}
+
+
+    .prac{background:#fff;border:1px solid #e3ecf6;border-radius:12px;padding:12px 14px;margin:18px 0 16px}
+    .prac-t{font-weight:700;color:#1f3a5f;margin-bottom:6px;font-size:15px}
+    .pq{padding:11px 0;border-top:1px dashed #e6eef7}
+    .pq:first-of-type{border-top:0}
+    .pq-q{font-size:14.5px;margin-bottom:7px;line-height:1.55;font-weight:600;color:#25384f}
+    .pq-os{display:flex;flex-direction:column;gap:6px}
+    .pq-o{cursor:pointer;border:1px solid #dbe6f2;background:#f8fbfe;border-radius:8px;padding:7px 10px;font-size:14px;color:#33465c}
+    .pq-o.ok{background:#e8f6ec;border-color:#8dd0a1;color:#1d6b38;font-weight:600}
+    .pq-o.bad{background:#fdecec;border-color:#eab0b0;color:#9b2b2b}
+    .pq-e{display:none;margin-top:8px;background:#f4f8fc;border-left:3px solid #2e6da4;padding:8px 10px;font-size:13.5px;color:#33465c;line-height:1.65}
+
+  .tocbtn{position:fixed;right:14px;bottom:18px;z-index:99;background:#1f3a5f;color:#fff;text-decoration:none;
+    border-radius:999px;padding:10px 16px;font-size:13.5px;box-shadow:0 4px 14px rgba(31,58,95,.35);opacity:.94}
+  .tocbtn:active{opacity:1}
+  details.prac>summary{cursor:pointer;list-style:none;display:block}
+  details.prac>summary::-webkit-details-marker{display:none}
+  details.prac>summary::before{content:'\25B8 ';color:#2e6da4;font-weight:700}
+  details.prac[open]>summary::before{content:'\25BE '}
+  details.prac>summary::after{content:'（点击展开）';font-weight:400;font-size:12.5px;color:#7d8ea1}
+  details.prac[open]>summary::after{content:'（点击收起）'}
 </style>
 </head>
 <body>
+<a class="tocbtn" href="#toc">☰ 目录</a>
 <div class="wrap">
   <div class="hero">
-    <h1>零基础入门 · 低压电工十二讲</h1>
-    <p>先看懂，再去背题 —— 每讲 3 分钟，看完再看题库</p>
+    <h1>零基础入门 · 低压电工十六讲</h1>
+    <p>先看懂，再去背题 —— 每讲 3 分钟，另附数字速记、实操口述模板、二十个陷阱、24 个图形符号图例</p>
   </div>
 
-  <div class="toc">
+  <div class="toc" id="toc">
     <h2>目录</h2>
     <a href="#l0">第 0 讲　电到底在“流”什么</a>
     <a href="#l1">第 1 讲　电压、电流、电阻、功率（水塔类比）</a>
@@ -54,6 +78,10 @@ th{background:#f3f7fc;color:#1f3a5f}
     <a href="#l9">第 9 讲　接线常识：插座左零右火、开关接火线</a>
     <a href="#l10">第 10 讲　人为什么会电死，怎么救</a>
     <a href="#l11">第 11 讲　考证路线图，怎么用这套题库</a>
+    <a href="#l12">第 12 讲 数字速记大全（背这张表就够）</a>
+    <a href="#l13">第 13 讲 实操四科目口述模板（照着念）</a>
+    <a href="#l14">第 14 讲 二十个必考陷阱（错题都在这）</a>
+    <a href="#l15">第 15 讲 电路图怎么看：48 个图形符号</a>
   </div>
 
   <div class="card" id="l0">
@@ -63,6 +91,61 @@ th{background:#f3f7fc;color:#1f3a5f}
     <p>1）电子移动得很慢（每秒几毫米），但“推力”传递得极快，差不多是光速。所以你一合闸，灯立刻就亮，不是因为电子跑得快，而是因为整条导线里的电子<b>同时</b>开始动。</p>
     <p>2）电流的方向，物理上规定为<b>正电荷流动的方向</b>，正好和电子实际移动方向相反。考试里按“正电荷方向”记就行。</p>
     <div class="key"><em>记住这句：</em>电流是电荷有规则的定向移动，方向按正电荷走的方向算。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="A">
+      <div class="pq-q">1. 习惯上规定的电流方向是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 正电荷定向移动的方向</span>
+        <span class="pq-o" data-k="B">B. 自由电子移动的方向</span>
+        <span class="pq-o" data-k="C">C. 电压降低的方向</span>
+        <span class="pq-o" data-k="D">D. 磁场的方向</span>
+      </div>
+      <div class="pq-e">物理上把正电荷定向移动的方向规定为电流方向。金属导线里实际移动的是带负电的自由电子，方向与规定的电流方向相反。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">2. 金属导线中真正在移动、形成电流的是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 正离子</span>
+        <span class="pq-o" data-k="B">B. 原子核</span>
+        <span class="pq-o" data-k="C">C. 质子</span>
+        <span class="pq-o" data-k="D">D. 自由电子</span>
+      </div>
+      <div class="pq-e">金属靠自由电子导电；电解液里才是正负离子移动。所以“规定方向”和“实际方向”相反。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">3. 电路要持续有电流，必须同时具备（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 只有电源</span>
+        <span class="pq-o" data-k="B">B. 只有导线</span>
+        <span class="pq-o" data-k="C">C. 有电源，并且电路是闭合的</span>
+        <span class="pq-o" data-k="D">D. 有电压就够</span>
+      </div>
+      <div class="pq-e">有电压还要有闭合回路才有电流。断路时两端有电压但电流为零。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">4. 导体对电流的阻碍作用叫（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 电抗</span>
+        <span class="pq-o" data-k="B">B. 电阻</span>
+        <span class="pq-o" data-k="C">C. 电容</span>
+        <span class="pq-o" data-k="D">D. 电感</span>
+      </div>
+      <div class="pq-e">电阻符号 R，单位欧姆 Ω。导线越长、越细、温度越高，电阻越大。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">5. 判断：只要导体两端有电压，就一定有电流通过。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 错误 ×</span>
+        <span class="pq-o" data-k="B">B. 正确 √</span>
+      </div>
+      <div class="pq-e">×。断路时虽然有电压，但没有闭合回路，电流为零。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M2">去刷题 · M2 电工基础 →</a>
+
   </div>
 
   <div class="card" id="l1">
@@ -82,6 +165,63 @@ th{background:#f3f7fc;color:#1f3a5f}
       <tr><td>W = P × t</td><td>电能 = 功率乘时间（1 度电 = 1kW 用 1 小时）</td><td>1000W 用 2 小时 = 2 度</td></tr>
     </table>
     <div class="key"><em>记住这句：</em>电压是“推力”，电流是“流量”，电阻是“阻力”，功率是“干活的本事”。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="D">
+      <div class="pq-q">1. 欧姆定律的表达式是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. I＝U×R</span>
+        <span class="pq-o" data-k="B">B. U＝I/R</span>
+        <span class="pq-o" data-k="C">C. R＝I/U</span>
+        <span class="pq-o" data-k="D">D. I＝U/R</span>
+      </div>
+      <div class="pq-e">电流与电压成正比、与电阻成反比。记成“电流=电压÷电阻”最直观。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">2. 一只 220V、100W 的白炽灯，灯丝电阻约是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 220Ω</span>
+        <span class="pq-o" data-k="B">B. 100Ω</span>
+        <span class="pq-o" data-k="C">C. 484Ω</span>
+        <span class="pq-o" data-k="D">D. 48.4Ω</span>
+      </div>
+      <div class="pq-e">R＝U²/P＝220²/100＝484Ω。注意灯泡冷态电阻比这个值小得多。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">3. 1kW·h 的电能相当于（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 1 J</span>
+        <span class="pq-o" data-k="B">B. 3.6×10⁶ J</span>
+        <span class="pq-o" data-k="C">C. 1000 J</span>
+        <span class="pq-o" data-k="D">D. 3.6 J</span>
+      </div>
+      <div class="pq-e">1 度电＝1000W×3600s＝3.6×10⁶J。考试常把“度”和“焦耳”混着考。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">4. 两个 100Ω 的电阻串联，总电阻是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 200Ω</span>
+        <span class="pq-o" data-k="B">B. 100Ω</span>
+        <span class="pq-o" data-k="C">C. 50Ω</span>
+        <span class="pq-o" data-k="D">D. 0Ω</span>
+      </div>
+      <div class="pq-e">串联相加：100＋100＝200Ω。串联分压，电阻大的分得的电压大。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">5. 两个 100Ω 的电阻并联，总电阻是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 200Ω</span>
+        <span class="pq-o" data-k="B">B. 100Ω</span>
+        <span class="pq-o" data-k="C">C. 25Ω</span>
+        <span class="pq-o" data-k="D">D. 50Ω</span>
+      </div>
+      <div class="pq-e">并联：1/R＝1/100＋1/100＝2/100，R＝50Ω。并联总电阻小于其中任何一个。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M2">去刷题 · M2 电工基础 →</a>
+
   </div>
 
   <div class="card" id="l2">
@@ -91,6 +231,61 @@ th{background:#f3f7fc;color:#1f3a5f}
     <p><b>50Hz</b> 意思是：每秒钟方向变化 50 个完整周期（一正一反算一个周期）。所以一秒钟里，电流方向实际改变了 100 次。</p>
     <p>为什么要用交流？因为交流可以用<b>变压器</b>轻松升压降压——远距离输电升到几十万伏减少损耗，到小区再降回 220V/380V。这是直流做不到的（现在有特高压直流，但那是另一套技术）。</p>
     <div class="key"><em>记住这句：</em>我国工频交流是 50Hz，一秒钟 50 个周期，电流方向变了 100 次。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="C">
+      <div class="pq-q">1. 我国低压交流电的频率是 50Hz，它的周期是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 0.5s</span>
+        <span class="pq-o" data-k="B">B. 50s</span>
+        <span class="pq-o" data-k="C">C. 0.02s</span>
+        <span class="pq-o" data-k="D">D. 0.2s</span>
+      </div>
+      <div class="pq-e">T＝1/f＝1/50＝0.02s。一秒钟变化 50 个周期。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">2. 用交流电压表测 220V 市电，表上显示的是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 最大值</span>
+        <span class="pq-o" data-k="B">B. 有效值</span>
+        <span class="pq-o" data-k="C">C. 平均值</span>
+        <span class="pq-o" data-k="D">D. 瞬时值</span>
+      </div>
+      <div class="pq-e">仪表读数都是有效值。220V 是有效值，峰值约 311V（220×1.414）。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">3. 家用 220V 交流电的峰值约为（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 311V</span>
+        <span class="pq-o" data-k="B">B. 220V</span>
+        <span class="pq-o" data-k="C">C. 380V</span>
+        <span class="pq-o" data-k="D">D. 110V</span>
+      </div>
+      <div class="pq-e">峰值＝有效值×√2≈220×1.414≈311V。所以绝缘要按峰值考虑。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">4. 判断：直流电的方向和大小都不随时间变化。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 错误 ×</span>
+        <span class="pq-o" data-k="B">B. 正确 √</span>
+      </div>
+      <div class="pq-e">√。但要注意“脉动直流”大小会变、方向不变，也不算纯直流。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">5. 三相异步电动机使用的是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 直流电</span>
+        <span class="pq-o" data-k="B">B. 单相交流电</span>
+        <span class="pq-o" data-k="C">C. 三相交流电</span>
+        <span class="pq-o" data-k="D">D. 脉冲电</span>
+      </div>
+      <div class="pq-e">三相异步电动机由三相交流电产生旋转磁场，不需要另加启动绕组。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M2">去刷题 · M2 电工基础 →</a>
+
   </div>
 
   <div class="card" id="l3">
@@ -105,6 +300,59 @@ th{background:#f3f7fc;color:#1f3a5f}
     <div class="warn">⚠️ 零线不是“没电的线”。零线断线、相线碰壳、接线错误时，零线和外壳都可能带 220V。所以检修一定要<b>先断电、再验电</b>，不能靠“摸一下”判断。</div>
     <p><b>地线为什么救命：</b>洗衣机外壳如果漏电，没有地线时，人一碰，电流就从“火线→人→大地”走，人就是那根导线。有了地线，外壳通过低电阻的 PE 线直接连到大地，漏电电流大部分走地线，同时漏电保护器检测到电流差立刻跳闸。</p>
     <div class="key"><em>记住这句：</em>火线送电、零线回路、地线保命；黄绿双色永远是地线，绝不能当零线用。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="B">
+      <div class="pq-q">1. 按规范，保护地线（PE）应使用（　）颜色的导线。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 淡蓝色</span>
+        <span class="pq-o" data-k="B">B. 黄绿双色</span>
+        <span class="pq-o" data-k="C">C. 红色</span>
+        <span class="pq-o" data-k="D">D. 黑色</span>
+      </div>
+      <div class="pq-e">PE 专用黄绿双色，N 线用淡蓝色，相线用黄、绿、红。颜色是“唯一标识”，不许乱用。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">2. 判断：在没有零线的情况下，可以把地线当零线用。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 错误 ×</span>
+        <span class="pq-o" data-k="B">B. 正确 √</span>
+      </div>
+      <div class="pq-e">×。PE 线严禁当 N 线用，否则外壳带电，而且漏保会误动作，极其危险。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">3. 低压配电系统的零线，是在变压器的（　）处接地。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 外壳</span>
+        <span class="pq-o" data-k="B">B. 高压侧</span>
+        <span class="pq-o" data-k="C">C. 任何位置</span>
+        <span class="pq-o" data-k="D">D. 中性点</span>
+      </div>
+      <div class="pq-e">变压器中性点直接接地，所以零线对地电位接近零；这也是单相触电“大地就是回路”的原因。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">4. 用验电笔判断火线，正确的现象是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 氖管不亮</span>
+        <span class="pq-o" data-k="B">B. 笔身发热</span>
+        <span class="pq-o" data-k="C">C. 氖管发光</span>
+        <span class="pq-o" data-k="D">D. 发出声响</span>
+      </div>
+      <div class="pq-e">手必须接触笔尾金属体，氖管发光即为火线。测之前最好在有电的地方先试一下笔好不好。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">5. 判断：照明开关接在零线上，关灯后灯不亮，所以是安全的。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 正确 √</span>
+        <span class="pq-o" data-k="B">B. 错误 ×</span>
+      </div>
+      <div class="pq-e">×。开关必须控制火线。接零线时灯虽然不亮，但灯头仍然带电，换灯泡会触电。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M5">去刷题 · M5 防触电技术 →</a>
+
   </div>
 
   <div class="card" id="l4">
@@ -113,6 +361,61 @@ th{background:#f3f7fc;color:#1f3a5f}
     <p>所谓 220V，是指火线对零线（也就是对地）的电压，叫<b>相电压</b>。</p>
     <p>家里的插座：两孔的是“火线 + 零线”，三孔多一个“地线”。</p>
     <div class="key"><em>记住这句：</em>220V 是火线对零线的电压（相电压），一根火线一根零线就叫单相。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="A">
+      <div class="pq-q">1. 单相 220V 供电由（　）组成。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 一根火线和一根零线</span>
+        <span class="pq-o" data-k="B">B. 两根火线</span>
+        <span class="pq-o" data-k="C">C. 三根火线</span>
+        <span class="pq-o" data-k="D">D. 一根火线和一根地线</span>
+      </div>
+      <div class="pq-e">单相＝一火一零，地线是保护线、不参与工作回路。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">2. 单相三孔插座正确的接线是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 左火、右零、上接地</span>
+        <span class="pq-o" data-k="B">B. 上火、左地、右零</span>
+        <span class="pq-o" data-k="C">C. 随便接都可以</span>
+        <span class="pq-o" data-k="D">D. 左零、右火、上接地</span>
+      </div>
+      <div class="pq-e">面对插座：左零右火上接地。记成“左零右火，地在上”。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">3. 判断：单相三孔插座的地线孔可以不接线。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 正确 √</span>
+        <span class="pq-o" data-k="B">B. 错误 ×</span>
+      </div>
+      <div class="pq-e">×。地线是保命的，不接地线时设备漏电，外壳就带 220V。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">4. 一般照明回路分支线常用（　）mm² 的铜芯导线。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 10</span>
+        <span class="pq-o" data-k="B">B. 1.5 或 2.5</span>
+        <span class="pq-o" data-k="C">C. 16</span>
+        <span class="pq-o" data-k="D">D. 25</span>
+      </div>
+      <div class="pq-e">照明 1.5mm²、插座 2.5mm² 是常见配置；截面越大载流量越大。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">5. 单相电能表的接线是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 1、3 进，2、4 出</span>
+        <span class="pq-o" data-k="B">B. 1、2 进，3、4 出</span>
+        <span class="pq-o" data-k="C">C. 1、4 进，2、3 出</span>
+        <span class="pq-o" data-k="D">D. 随意</span>
+      </div>
+      <div class="pq-e">单相表 1 进 2 出（火线）、3 进 4 出（零线）。接错会倒转或计量不准。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M7">去刷题 · M7 配电线路·照明 →</a>
+
   </div>
 
   <div class="card" id="l5">
@@ -145,6 +448,61 @@ th{background:#f3f7fc;color:#1f3a5f}
     <p>所以：<b>家用 220V 是“一火一零”，电动机 380V 是“两根火线”。</b>这也是为什么三相电动机接三根火线就能转——它不需要零线。</p>
     <div class="warn">⚠️ 三相四线里，零线是<b>三根火线共用</b>的。三相负载不平衡时，零线里会有电流流过；一旦零线断了，原本 220V 的相电压可能升到 380V，会把家里电器全部烧毁。所以规范要求零线上不得装熔断器和开关，并且要做重复接地。</div>
     <div class="key"><em>记住这句：</em>三相四线 = 三火一零；火对零 220V，火对火 380V；零线共用、不能断、不能装开关和熔断器。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="D">
+      <div class="pq-q">1. “三相四线”指的是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 四根火线</span>
+        <span class="pq-o" data-k="B">B. 两根火线两根零线</span>
+        <span class="pq-o" data-k="C">C. 三根火线加一根地线</span>
+        <span class="pq-o" data-k="D">D. 三根火线加一根零线</span>
+      </div>
+      <div class="pq-e">三根火线（L1、L2、L3）加一根零线（N）。工厂、小区最常用的配电方式。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">2. 三相四线制中，两根火线之间的电压是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 220V</span>
+        <span class="pq-o" data-k="B">B. 110V</span>
+        <span class="pq-o" data-k="C">C. 380V</span>
+        <span class="pq-o" data-k="D">D. 660V</span>
+      </div>
+      <div class="pq-e">线电压＝相电压×√3≈220×1.732≈380V。这就是 220 与 380 的来历。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">3. 判断：三相四线制的零线上可以装熔断器或开关。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 正确 √</span>
+        <span class="pq-o" data-k="B">B. 错误 ×</span>
+      </div>
+      <div class="pq-e">×。零线断开会造成中性点位移，原本 220V 的地方可能变成 380V，烧毁设备甚至伤人。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">4. 三相负载不平衡时，零线中（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 有电流通过</span>
+        <span class="pq-o" data-k="B">B. 没有电流</span>
+        <span class="pq-o" data-k="C">C. 电流恒为零</span>
+        <span class="pq-o" data-k="D">D. 会感应出高压</span>
+      </div>
+      <div class="pq-e">三相完全平衡时零线电流为零；不平衡时零线承担不平衡电流，所以零线不许断、不许装开关。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">5. 三相异步电动机只需接（　）根线就能运转。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 四</span>
+        <span class="pq-o" data-k="B">B. 两</span>
+        <span class="pq-o" data-k="C">C. 五</span>
+        <span class="pq-o" data-k="D">D. 三</span>
+      </div>
+      <div class="pq-e">三根火线接上即可，零线不参与。这也是电动机不需要零线的原因。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M2">去刷题 · M2 电工基础 →</a>
+
   </div>
 
   <div class="card" id="l6">
@@ -159,6 +517,61 @@ th{background:#f3f7fc;color:#1f3a5f}
     </table>
     <p>所以工地上看到“五根线”，不是多此一举，而是把“保命的那根”单独留出来了。</p>
     <div class="key"><em>记住这句：</em>TN-S 就是五线、PE 与 N 分开；施工单位必须用 TN-S 并装漏电保护器。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="C">
+      <div class="pq-q">1. TN-S 系统指的是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 三相四线，PE 与 N 合一</span>
+        <span class="pq-o" data-k="B">B. IT 系统</span>
+        <span class="pq-o" data-k="C">C. 三相五线，PE 与 N 全程分开</span>
+        <span class="pq-o" data-k="D">D. TT 系统</span>
+      </div>
+      <div class="pq-e">TN-S＝五线制，N 与 PE 分开，最安全，施工现场强制要求。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">2. 施工现场临时用电必须采用（　）系统。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. TN-C</span>
+        <span class="pq-o" data-k="B">B. TN-S</span>
+        <span class="pq-o" data-k="C">C. IT</span>
+        <span class="pq-o" data-k="D">D. TT</span>
+      </div>
+      <div class="pq-e">TN-S（三相五线）是工地强制要求，PE 单独敷设、重复接地。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">3. 判断：TN-C-S 系统中，PE 与 N 分开后还可以再合并。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 错误 ×</span>
+        <span class="pq-o" data-k="B">B. 正确 √</span>
+      </div>
+      <div class="pq-e">×。分开后绝不能再合并，否则 PEN 线上的电位差会加到设备外壳上。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">4. 保护线 PE 的正确颜色是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 淡蓝色</span>
+        <span class="pq-o" data-k="B">B. 黑色</span>
+        <span class="pq-o" data-k="C">C. 白色</span>
+        <span class="pq-o" data-k="D">D. 黄绿双色</span>
+      </div>
+      <div class="pq-e">PE 黄绿双色是国际通用，便于识别、防止误接。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">5. 保护接零适用于（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. IT 系统</span>
+        <span class="pq-o" data-k="B">B. 任何系统</span>
+        <span class="pq-o" data-k="C">C. TN 系统（中性点直接接地）</span>
+        <span class="pq-o" data-k="D">D. 高压系统</span>
+      </div>
+      <div class="pq-e">TN 系统用保护接零，TT/IT 系统用保护接地。两者不能混用。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M5">去刷题 · M5 防触电技术 →</a>
+
   </div>
 
   <div class="card" id="l7">
@@ -174,6 +587,63 @@ th{background:#f3f7fc;color:#1f3a5f}
     </table>
     <div class="warn">⚠️ 三个死记点：① 熔体<b>不能用铜丝代替</b>；② 漏保的试验按钮<b>不能代替</b>定期检测动作电流；③ 装了漏保也<b>不能</b>省掉接地（接零）。</div>
     <div class="key"><em>记住这句：</em>熔断器管短路、热继电器管过载、漏保管漏电、接触器管控制、断路器两样都管。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="B">
+      <div class="pq-q">1. 熔断器在电路中的主要作用是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 过载保护</span>
+        <span class="pq-o" data-k="B">B. 短路保护</span>
+        <span class="pq-o" data-k="C">C. 失压保护</span>
+        <span class="pq-o" data-k="D">D. 漏电保护</span>
+      </div>
+      <div class="pq-e">熔体在短路大电流下瞬间熔断。它也能对轻微过载起一点作用，但主要功能是短路保护。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">2. 热继电器主要用于电动机的（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 过载保护</span>
+        <span class="pq-o" data-k="B">B. 短路保护</span>
+        <span class="pq-o" data-k="C">C. 漏电保护</span>
+        <span class="pq-o" data-k="D">D. 防雷保护</span>
+      </div>
+      <div class="pq-e">双金属片受热弯曲顶开触点，切断控制回路。它不能代替熔断器做短路保护。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">3. 家用漏电保护器的动作电流一般为（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 300mA</span>
+        <span class="pq-o" data-k="B">B. 3A</span>
+        <span class="pq-o" data-k="C">C. 30A</span>
+        <span class="pq-o" data-k="D">D. 30mA</span>
+      </div>
+      <div class="pq-e">30mA、动作时间≤0.1s，这个值是按照“人能自己摆脱”的安全限值定的。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">4. 接触器除控制通断外，还具有（　）保护作用。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 短路</span>
+        <span class="pq-o" data-k="B">B. 漏电</span>
+        <span class="pq-o" data-k="C">C. 失压（欠压）</span>
+        <span class="pq-o" data-k="D">D. 防雷</span>
+      </div>
+      <div class="pq-e">线圈电压消失即释放，来电后不会自启动——这就是失压保护，防止意外重启伤人。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">5. 与熔断器相比，断路器的主要优点是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 价格更便宜</span>
+        <span class="pq-o" data-k="B">B. 故障排除后可重复使用</span>
+        <span class="pq-o" data-k="C">C. 不需要维护</span>
+        <span class="pq-o" data-k="D">D. 体积更小</span>
+      </div>
+      <div class="pq-e">熔断器熔断后必须换熔体；断路器跳闸后合上即可，还可做过载和短路双重保护。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M6">去刷题 · M6 低压电器·电动机 →</a>
+
   </div>
 
   <div class="card" id="l8">
@@ -183,6 +653,59 @@ th{background:#f3f7fc;color:#1f3a5f}
     <p><b>星三角（Y-△）启动</b>：电机直接启动时电流能达到额定电流的 4～7 倍，电网受不了。所以启动时先把绕组接成星形（Y），每相电压降到 1/√3，启动电流降到 1/3；转起来以后再切换成三角形（△）正常运行。</p>
     <div class="warn">⚠️ 代价：星形接法时启动转矩也降到 1/3（转矩和电压平方成正比）。所以只适合<b>轻载启动</b>，重载设备不能用。</div>
     <div class="key"><em>记住这句：</em>Y-△ 启动：电流降到 1/3，转矩也降到 1/3；正反转必须加电气互锁，否则两相短路。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="A">
+      <div class="pq-q">1. 三相异步电动机星形接法时，每相绕组承受的电压是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 220V</span>
+        <span class="pq-o" data-k="B">B. 380V</span>
+        <span class="pq-o" data-k="C">C. 660V</span>
+        <span class="pq-o" data-k="D">D. 110V</span>
+      </div>
+      <div class="pq-e">星形接法线电压 380V，每相只承受 380/√3≈220V，所以启动电流小。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">2. Y-△ 降压启动时，启动电流降为直接启动的（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 1/2</span>
+        <span class="pq-o" data-k="B">B. 1/√3</span>
+        <span class="pq-o" data-k="C">C. 1/9</span>
+        <span class="pq-o" data-k="D">D. 1/3</span>
+      </div>
+      <div class="pq-e">星形启动时每相电压降为 1/√3，电流也降为 1/√3，而线电流是相电流，所以为 1/3。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">3. 判断：Y-△ 启动在降低启动电流的同时，启动转矩也降为 1/3。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 错误 ×</span>
+        <span class="pq-o" data-k="B">B. 正确 √</span>
+      </div>
+      <div class="pq-e">√。转矩与电压平方成正比，(1/√3)²＝1/3。所以只适合轻载或空载启动。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">4. 铭牌标 380V、△ 接法的电动机，接入 380V 电网时应接成（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 星形</span>
+        <span class="pq-o" data-k="B">B. 三角形</span>
+        <span class="pq-o" data-k="C">C. 星三角都行</span>
+        <span class="pq-o" data-k="D">D. 不能接</span>
+      </div>
+      <div class="pq-e">铭牌 380V△ 就是额定运行在 380V 三角形接法；星形只用于启动瞬间。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">5. 判断：三相电动机缺相运行，短时间内就可能烧毁绕组。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 正确 √</span>
+        <span class="pq-o" data-k="B">B. 错误 ×</span>
+      </div>
+      <div class="pq-e">√。缺相后其余两相电流急剧增大、转矩下降，是最常见的烧电机原因，所以要装缺相保护。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M6">去刷题 · M6 低压电器·电动机 →</a>
+
   </div>
 
   <div class="card" id="l9">
@@ -196,6 +719,61 @@ th{background:#f3f7fc;color:#1f3a5f}
       <tr><td>PE 与 N</td><td>全程分开，<b>绝不能合并</b></td><td>合并会让外壳带 220V</td></tr>
     </table>
     <div class="key"><em>记住这句：</em>开关断火不断零，插座左零右火，地线永远单独走。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="D">
+      <div class="pq-q">1. 导线连接后恢复绝缘，正确的做法是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 用普通胶带缠几圈</span>
+        <span class="pq-o" data-k="B">B. 不处理</span>
+        <span class="pq-o" data-k="C">C. 用纸包住</span>
+        <span class="pq-o" data-k="D">D. 用绝缘胶布或热缩管按规范恢复</span>
+      </div>
+      <div class="pq-e">绝缘恢复要压过原绝缘层、层间错开，潮湿场所还要用防水胶布。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">2. 铜导线与铝导线连接时，必须（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 直接扭在一起</span>
+        <span class="pq-o" data-k="B">B. 用锡焊死</span>
+        <span class="pq-o" data-k="C">C. 用铜铝过渡接头或过渡端子</span>
+        <span class="pq-o" data-k="D">D. 随便接</span>
+      </div>
+      <div class="pq-e">铜铝接触在潮湿空气中会电化学腐蚀，接触电阻增大而发热，所以必须过渡。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">3. 管内穿线时，两个弯的情况下，管内导线总长度不应超过（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 30m</span>
+        <span class="pq-o" data-k="B">B. 15m</span>
+        <span class="pq-o" data-k="C">C. 20m</span>
+        <span class="pq-o" data-k="D">D. 8m</span>
+      </div>
+      <div class="pq-e">记忆口诀：直线 30、一个弯 20、两个弯 15、三个弯 8（米）。弯越多越难穿、越难检修。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">4. 判断：不同电压等级的线路可以穿在同一根管内。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 错误 ×</span>
+        <span class="pq-o" data-k="B">B. 正确 √</span>
+      </div>
+      <div class="pq-e">×。不同电压等级必须分管敷设，避免绝缘击穿造成串电。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">5. 导线接头应当设置在（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 管内任意位置</span>
+        <span class="pq-o" data-k="B">B. 墙内</span>
+        <span class="pq-o" data-k="C">C. 穿墙处</span>
+        <span class="pq-o" data-k="D">D. 接线盒内，便于检修</span>
+      </div>
+      <div class="pq-e">管内、墙内严禁有接头，否则无法检修，也容易因接触不良发热引发火灾。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M7">去刷题 · M7 配电线路·照明 →</a>
+
   </div>
 
   <div class="card" id="l10">
@@ -206,6 +784,61 @@ th{background:#f3f7fc;color:#1f3a5f}
     <p>① 先断电（拉闸、拔插头）→ ② 不能断电就用干燥木棒/绝缘物挑开电线，救护者站在绝缘垫上 → ③ 判断意识和呼吸（轻拍双肩、大声呼唤）→ ④ 无呼吸立即心肺复苏：<b>按压 30 次 + 吹气 2 次</b>，按压深度 5～6cm，频率 100～120 次/分 → ⑤ 有 AED 尽早除颤 → ⑥ 持续抢救，直到专业人员接手。</p>
     <div class="warn">⚠️ 三个绝对禁止：<b>绝对不能徒手去拉触电者</b>；不能给昏迷者喂水喂药；不能因为“瞳孔散大”就放弃抢救。</div>
     <div class="key"><em>记住这句：</em>先断电再救人；30:2、5～6cm、100～120 次/分。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="C">
+      <div class="pq-q">1. 发现有人触电，第一步应该（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 先打电话</span>
+        <span class="pq-o" data-k="B">B. 先做人工呼吸</span>
+        <span class="pq-o" data-k="C">C. 迅速切断电源或使触电者脱离电源</span>
+        <span class="pq-o" data-k="D">D. 先泼水降温</span>
+      </div>
+      <div class="pq-e">先断电再施救，否则救人者也会触电。低压可用绝缘物挑开导线，高压必须通知停电或用绝缘杆。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">2. 成人心肺复苏时，胸外按压与人工呼吸的比例是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 15:2</span>
+        <span class="pq-o" data-k="B">B. 30:2</span>
+        <span class="pq-o" data-k="C">C. 5:1</span>
+        <span class="pq-o" data-k="D">D. 10:1</span>
+      </div>
+      <div class="pq-e">30 次按压配 2 次吹气，按压频率 100～120 次/分，深度 5～6cm。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">3. 判断：看到有人触电，可以直接用手把他拉开。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 错误 ×</span>
+        <span class="pq-o" data-k="B">B. 正确 √</span>
+      </div>
+      <div class="pq-e">×。人体是导体，直接用手拉会造成连锁触电。必须用干燥木棍等绝缘物。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">4. 触电者呼吸停止但心跳存在，应采取（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 胸外按压</span>
+        <span class="pq-o" data-k="B">B. 立即喂水</span>
+        <span class="pq-o" data-k="C">C. 掐人中即可</span>
+        <span class="pq-o" data-k="D">D. 人工呼吸</span>
+      </div>
+      <div class="pq-e">只有呼吸停止做人工呼吸；只有心跳停止做胸外按压；两者都停才做心肺复苏。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">5. 高压触电时，正确的脱离电源方式是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 用手拉</span>
+        <span class="pq-o" data-k="B">B. 用铁棍挑</span>
+        <span class="pq-o" data-k="C">C. 通知停电，或用绝缘杆挑开</span>
+        <span class="pq-o" data-k="D">D. 用水冲</span>
+      </div>
+      <div class="pq-e">高压有电弧和跨步电压危险，必须由专业人员断开电源，救护者要保持安全距离。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M4">去刷题 · M4 触电与急救 →</a>
+
   </div>
 
   <div class="card" id="l11">
@@ -223,10 +856,480 @@ th{background:#f3f7fc;color:#1f3a5f}
     </table>
     <p><b>第五步：拿证与维持</b>——证书有效期 6 年，全国有效。到期前 6 个月内完成理论培训和理论考试，届满前 60 日内申请<b>换证</b>（旧的“每 3 年复审”已取消）。</p>
     <div class="key"><em>怎么用题库：</em>先按本页顺序读一遍 → 打开刷题页，按 M1～M8 模块过一遍（错了就看解析）→ 用“随机抽 30 题”模拟 → 考前只看错题和速记页。</div>
-    <a class="back" href="index.html">← 去刷题</a>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="B">
+      <div class="pq-q">1. 低压电工理论考试的合格分数线是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 60 分</span>
+        <span class="pq-o" data-k="B">B. 80 分</span>
+        <span class="pq-o" data-k="C">C. 70 分</span>
+        <span class="pq-o" data-k="D">D. 90 分</span>
+      </div>
+      <div class="pq-e">理论和实操都是百分制、80 分合格，且实操设“否决项”，否决项不过直接不合格。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">2. 考试顺序上，一般是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 先考理论，理论合格后再考实操</span>
+        <span class="pq-o" data-k="B">B. 先考实操</span>
+        <span class="pq-o" data-k="C">C. 同时考</span>
+        <span class="pq-o" data-k="D">D. 顺序无所谓</span>
+      </div>
+      <div class="pq-e">理论合格后方可参加实际操作考试（《规定》第二十条）。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">3. 特种作业操作证的有效期是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 3 年</span>
+        <span class="pq-o" data-k="B">B. 5 年</span>
+        <span class="pq-o" data-k="C">C. 长期有效</span>
+        <span class="pq-o" data-k="D">D. 6 年</span>
+      </div>
+      <div class="pq-e">6 年有效、全国通用；2026 年 6 月 1 日起原来的“每 3 年复审”已改为届满前换证。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">4. 实操四个科目中，分值权重最高的是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 科目一 安全用具使用</span>
+        <span class="pq-o" data-k="B">B. 科目二 隐患排除</span>
+        <span class="pq-o" data-k="C">C. 科目三 安全操作技术（40%）</span>
+        <span class="pq-o" data-k="D">D. 科目四 应急处置</span>
+      </div>
+      <div class="pq-e">权重依次为 20%、20%、40%、20%，科目三占 40 分，接线类考题都在这里。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">5. 判断：取得低压电工证后，可以直接从事高压电工作业。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 正确 √</span>
+        <span class="pq-o" data-k="B">B. 错误 ×</span>
+      </div>
+      <div class="pq-e">×。各作业项目不递进、不兼容，高压必须单独取证。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M1">去刷题 · M1 法规与证件 →</a>
   </div>
 
-  <div class="foot">依据《低压电工作业人员安全技术培训大纲和考核标准》(2025) 与应急管理部令第 19 号（2026-06-01 施行）编写<br>仅供零基础入门理解，考试以当地应急管理部门题库为准</div>
+    <div class="card" id="l12">
+    <h2><span class="no">12</span>数字速记大全（背这张表就够）</h2>
+    <p>电工证理论考里，有一半的分是“数字”给的。把下面这张表背下来，比刷 50 道题都管用。</p>
+    <table>
+      <tr><th>考点</th><th>数字</th><th>怎么记</th></tr>
+      <tr><td>安全电压</td><td><b>42V、36V、24V、12V、6V</b>（工频有效值限值 50V）</td><td>越潮越小：一般 36、潮湿 24、金属容器/锅炉/特别潮湿 <b>12</b></td></tr>
+      <tr><td>接地电阻</td><td>保护接地 <b>≤4Ω</b>；重复接地 ≤10Ω；防雷接地 ≤10Ω；防静电接地 ≤100Ω</td><td>保护接地最严 4，其余 10，防静电最松 100</td></tr>
+      <tr><td>绝缘电阻</td><td>低压线路与设备 <b>≥0.5MΩ</b>（用 500V 兆欧表）</td><td>“半兆欧”，测之前先断电放电</td></tr>
+      <tr><td>漏电保护器</td><td>一般 <b>30mA / 0.1s</b>；潮湿场所、手持电动工具 <b>15mA</b>；每月按一次试验按钮</td><td>人的摆脱电流约 10~16mA，所以取 30 才不误动</td></tr>
+      <tr><td>电流阈值</td><td>感知：男 1.1mA / 女 0.7mA；摆脱：男 <b>16mA</b> / 女 10.5mA；致命：<b>50mA</b></td><td>“感知一、摆脱十六、致命五十”</td></tr>
+      <tr><td>心肺复苏</td><td>按压 <b>100~120 次/分</b>，深度 <b>5~6cm</b>，按压:通气 <b>30:2</b></td><td>“五到六厘米、一分钟一百一、三十比二”</td></tr>
+      <tr><td>安全距离</td><td>低压人体与带电体 <b>≥0.1m</b>；10kV <b>≥0.7m</b></td><td>低压一拃，10kV 一臂</td></tr>
+      <tr><td>架空线对地</td><td>居民区 <b>6m</b>；非居民区 <b>5m</b></td><td>有人住的高一米</td></tr>
+      <tr><td>灯具高度</td><td>生产场所室内吊灯 <b>≥2.5m</b>；质量 &gt;3kg 必须装在预埋件上</td><td>2.5 米、3 公斤两个“3”打头</td></tr>
+      <tr><td>照明回路</td><td>单相分支回路电流 <b>≤16A</b>，灯具 <b>≤25 个</b></td><td>16 安、25 盏</td></tr>
+      <tr><td>穿管接线盒</td><td>直线 30m；一个弯 20m；两个弯 15m；三个弯 8m</td><td>30-20-15-8，弯越多越短</td></tr>
+      <tr><td>导线颜色</td><td>L1 黄、L2 绿、L3 红、N 淡蓝、PE <b>黄绿双色</b></td><td>“黄绿只能当地线”，别的一律不许用黄绿</td></tr>
+      <tr><td>保护配合</td><td>熔断器→短路；热继电器→过载；断路器→短路+过载；接触器→失压</td><td>“熔短、热过、断全、接失压”</td></tr>
+      <tr><td>熔体/热元件</td><td>电动机熔体取额定电流 <b>1.5~2.5 倍</b>；热元件取 <b>1.0~1.15 倍</b></td><td>熔体防启动冲击取大，热元件防误动取小</td></tr>
+      <tr><td>其他</td><td>电动机电压波动 ±5%；电容器放电 ≥3min；转差率 2%~5%</td><td>“五、三、五”</td></tr>
+      <tr><td>证件</td><td>有效期 <b>6 年</b>；届满前 6 个月内完成理论培训+考试；届满前 <b>60 日</b>内申请换证</td><td>6 年证、提前 6 个月学、提前 60 天办</td></tr>
+    </table>
+    <div class="key"><em>背法：</em>先背“4/10/10/100”（接地），再背“42-36-24-12-6”（安全电压），最后背“30:2、5~6cm、100~120”（急救）。这三组会考 8~12 分。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="A">
+      <div class="pq-q">1. 我国规定的安全电压额定值不包括（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 50V</span>
+        <span class="pq-o" data-k="B">B. 42V</span>
+        <span class="pq-o" data-k="C">C. 36V</span>
+        <span class="pq-o" data-k="D">D. 24V</span>
+      </div>
+      <div class="pq-e">安全电压等级是 42、36、24、12、6V，工频有效值限值 50V。50V 是“限值”，不是等级。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">2. 保护接地电阻一般要求不大于（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 10Ω</span>
+        <span class="pq-o" data-k="B">B. 30Ω</span>
+        <span class="pq-o" data-k="C">C. 100Ω</span>
+        <span class="pq-o" data-k="D">D. 4Ω</span>
+      </div>
+      <div class="pq-e">保护接地≤4Ω；重复接地≤10Ω；防雷接地≤10Ω；防静电接地≤100Ω。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">3. 一般场所漏电保护器的额定动作电流是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 15mA</span>
+        <span class="pq-o" data-k="B">B. 100mA</span>
+        <span class="pq-o" data-k="C">C. 30mA</span>
+        <span class="pq-o" data-k="D">D. 300mA</span>
+      </div>
+      <div class="pq-e">一般 30mA/0.1s；潮湿场所和手持电动工具用 15mA。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">4. 通过人体的工频电流达到（　）就可能致命。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 1mA</span>
+        <span class="pq-o" data-k="B">B. 50mA</span>
+        <span class="pq-o" data-k="C">C. 10mA</span>
+        <span class="pq-o" data-k="D">D. 500mA</span>
+      </div>
+      <div class="pq-e">感知约 1mA、摆脱约 10～16mA、致命约 50mA。口诀“感知一、摆脱十六、致命五十”。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">5. 低压操作时，人体与带电体的安全距离不小于（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 0.1m</span>
+        <span class="pq-o" data-k="B">B. 0.7m</span>
+        <span class="pq-o" data-k="C">C. 1m</span>
+        <span class="pq-o" data-k="D">D. 3m</span>
+      </div>
+      <div class="pq-e">低压 0.1m，10kV 0.7m。记忆：“低压一拃，10kV 一臂”。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M1">去刷题 · M1 法规与证件 →</a>
+
+  </div>
+
+  <div class="card" id="l13">
+    <h2><span class="no">13</span>实操四科目口述模板（照着念）</h2>
+    <p>实操考试不只是动手，<b>考官一直在听你说什么</b>。同样接对线，说了步骤的给满分，闷头干活的扣分。以下四段是可以直接背的话术。</p>
+    <p><b>科目一 安全用具使用（20%）</b></p>
+    <div class="ana">“报告考官，使用前检查：万用表表笔无破损、电池有电、量程选对；兆欧表做开路（指针∞）和短路（指针 0）校验；验电器先在带电体上验证有效；绝缘手套做充气检查不漏气。使用完毕，兆欧表对设备放电后再拆线，表笔复位。”</div>
+    <p><b>科目二 作业现场安全隐患排除（20%）</b></p>
+    <div class="ana">“我按‘人—机—环—管’顺序排查：<b>人</b>：有无无证上岗、未戴防护用品；<b>机</b>：设备有无破损、未接地/接零、一闸多机、导线老化、插座接线错误；<b>环</b>：通道是否堆物、灭火器是否过期、有无积水；<b>管</b>：有无警示标志、有无操作规程。共发现 X 处隐患，第一处是……依据是……整改措施是……</div>
+    <p><b>科目三 安全操作技术（40%）</b></p>
+    <div class="ana">“报告考官，开始操作前先<b>断电、验电、挂牌上锁</b>，确认无电压后作业。接线遵循‘先接负载侧、后接电源侧；先接零线、后接火线’。导线剥削长度适中，不伤线芯，压接牢固不压绝缘层，PE 线不串联、不接开关。接线完毕自检：用万用表测有无短路，相间、相对地绝缘合格。送电顺序：<b>先合总闸、后合分闸</b>，送电前口述‘送电了’，送电后观察运行是否正常。”</div>
+    <div class="warn">科目三最容易挂的三点：<b>带电作业</b>（直接判不合格）、<b>送电前不自检、不口述</b>、<b>PE 线漏接或串接</b>。</div>
+    <p><b>科目四 作业现场应急处置（20%）</b></p>
+    <div class="ana">“发现有人触电，第一步<b>先断电</b>——拉闸、拔插头，或用干燥木棍挑开电线，<b>绝不能徒手拉人</b>。判断意识与呼吸：拍肩呼喊、看胸廓。无呼吸立即呼救并做心肺复苏：按压两乳头连线中点，深度 5~6cm，频率 100~120 次/分，按压与通气 30:2。电气火灾先断电，用<b>干粉或二氧化碳</b>灭火器，站在上风侧，对准火焰根部，‘提—拔—握—压—扫’，<b>严禁用水和泡沫</b>。”</div>
+    <div class="key"><em>一句话总纲：</em>断电 → 验电 → 防护 → 操作 → 自检 → 送电。这六步在任何科目里说出来都不会错。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="D">
+      <div class="pq-q">1. 用兆欧表测量线路绝缘电阻前，必须先（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 通电检查</span>
+        <span class="pq-o" data-k="B">B. 用水冲洗</span>
+        <span class="pq-o" data-k="C">C. 接上负载</span>
+        <span class="pq-o" data-k="D">D. 切断电源并对线路放电</span>
+      </div>
+      <div class="pq-e">带电测绝缘会损坏仪表、也会伤人；测完还要对设备放电，防止残余电荷电人。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">2. 用万用表测量电压时，表笔应当（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 与被测电路串联</span>
+        <span class="pq-o" data-k="B">B. 随意接</span>
+        <span class="pq-o" data-k="C">C. 与被测电路并联</span>
+        <span class="pq-o" data-k="D">D. 短接两端</span>
+      </div>
+      <div class="pq-e">测电压并联、测电流串联。把电流档并联到电源两端会直接短路烧表。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">3. 用钳形电流表测量单相电流时，应（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 同时夹两根导线</span>
+        <span class="pq-o" data-k="B">B. 只夹一根导线</span>
+        <span class="pq-o" data-k="C">C. 夹住整束线</span>
+        <span class="pq-o" data-k="D">D. 贴在导线上</span>
+      </div>
+      <div class="pq-e">钳口只夹一根线；同时夹两根（火零同夹）读数为零，因为电流互相抵消。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">4. 测量接地装置的接地电阻，应使用（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 接地电阻测试仪</span>
+        <span class="pq-o" data-k="B">B. 万用表</span>
+        <span class="pq-o" data-k="C">C. 兆欧表</span>
+        <span class="pq-o" data-k="D">D. 钳形表</span>
+      </div>
+      <div class="pq-e">接地电阻要用专用接地电阻测试仪（三极法），万用表测不出来。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">5. 判断：低压带电作业前可以不验电，直接操作。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 正确 √</span>
+        <span class="pq-o" data-k="B">B. 错误 ×</span>
+      </div>
+      <div class="pq-e">×。必须验电、确认无电、装设遮栏或接地，并有人监护。验电是防止误送电造成事故的关键一步。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html?m=M3">去刷题 · M3 仪表测量 →</a>
+
+  </div>
+
+  <div class="card" id="l14">
+    <h2><span class="no">14</span>二十个必考陷阱（错题都在这）</h2>
+    <p>下面每一条都是“看起来对、其实是错”的典型。考前把这张单子过一遍，能救回 10 分以上。</p>
+    <table>
+      <tr><th>陷阱说法</th><th>真相</th></tr>
+      <tr><td>装了漏电保护器就不用接地/接零</td><td><b>错</b>。漏保是附加保护，接地接零是基本保护，两者都要。</td></tr>
+      <tr><td>漏电能防所有触电</td><td><b>错</b>。同时碰两根火线（两相触电）时电流不经过零线，漏保不动作。</td></tr>
+      <tr><td>零线上可以装熔断器/开关</td><td><b>错</b>。零线断开会造成中性点位移，外壳带 220V。</td></tr>
+      <tr><td>PE 线可以串接、可以当 N 线用</td><td><b>错</b>。PE 必须单独、连续，严禁串接和当工作零线。</td></tr>
+      <tr><td>低压证干久了能直接考高压</td><td><b>错</b>。各操作项目不递进、不兼容，必须分别取证。</td></tr>
+      <tr><td>证书要每 3 年复审</td><td><b>错（2026 新规）</b>。已改为 6 年一换证，换证只考理论。</td></tr>
+      <tr><td>换证要考实操</td><td><b>错</b>。换证只做安全技术理论培训和理论考试。</td></tr>
+      <tr><td>实操可以一直补考</td><td><b>错</b>。实操不超过 5 次，仍不合格要重新参加理论考试。</td></tr>
+      <tr><td>理论没过可以先考实操</td><td><b>错</b>。理论合格后才能参加实操。</td></tr>
+      <tr><td>安全电压是绝对安全、不会电死人</td><td><b>错</b>。安全电压是“降低风险”，在潮湿、金属容器内仍可能致命。</td></tr>
+      <tr><td>36V 在所有场所都能用</td><td><b>错</b>。潮湿场所 24V，金属容器/锅炉/特别潮湿 12V。</td></tr>
+      <tr><td>保护接地电阻 10Ω 就行</td><td><b>错</b>。保护接地 ≤4Ω，10Ω 是重复接地和防雷接地。</td></tr>
+      <tr><td>用万用表测绝缘电阻</td><td><b>错</b>。绝缘电阻必须用兆欧表（500V），万用表测不准也不安全。</td></tr>
+      <tr><td>兆欧表测完直接拆线</td><td><b>错</b>。必须先对设备放电，否则残余电荷会电人。</td></tr>
+      <tr><td>电流互感器二次侧可以开路</td><td><b>错</b>。二次开路会产生高压，危及人身和设备；严禁开路，拆表先短接。</td></tr>
+      <tr><td>开关接在零线上也能关灯</td><td><b>错</b>。必须控制火线，否则关灯后灯头仍带电。</td></tr>
+      <tr><td>插座接线“左火右零”</td><td><b>错</b>。规范是<b>左零右火</b>，上面是地。</td></tr>
+      <tr><td>铜丝代替保险丝没关系</td><td><b>错</b>。熔体规格必须匹配，铜丝会失去保护作用并引发火灾。</td></tr>
+      <tr><td>电气着火先用水浇</td><td><b>错</b>。先断电，用干粉/二氧化碳，严禁水和泡沫。</td></tr>
+      <tr><td>触电者没呼吸就是死了、不用救</td><td><b>错</b>。立即心肺复苏，坚持到急救人员到场，不要轻易放弃。</td></tr>
+    </table>
+    <div class="warn"><em>用法：</em>刷题时每错一道，回到这张表里找对应那一行，把“陷阱说法”划掉。错题本里反复出现的，基本都在上面。</div>
+
+  <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="C">
+      <div class="pq-q">1. 下列关于漏电保护器的说法，正确的是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 它能防止所有触电</span>
+        <span class="pq-o" data-k="B">B. 它可以代替接地</span>
+        <span class="pq-o" data-k="C">C. 它不能防止两相触电</span>
+        <span class="pq-o" data-k="D">D. 它可以代替接零</span>
+      </div>
+      <div class="pq-e">两相触电时电流不经过零线，火线与火线之间进出电流相等，漏保检测不到、不会动作。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">2. 关于安全电压，正确的理解是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 接触 36V 绝对安全</span>
+        <span class="pq-o" data-k="B">B. 它不是绝对安全，潮湿场所仍可能致命</span>
+        <span class="pq-o" data-k="C">C. 安全电压可以随便摸</span>
+        <span class="pq-o" data-k="D">D. 安全电压就是 220V</span>
+      </div>
+      <div class="pq-e">安全电压是“降低风险”，在潮湿、金属容器内人体电阻大幅下降，仍可能致命。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">3. 同一台设备上，保护接零和保护接地（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 不能混用</span>
+        <span class="pq-o" data-k="B">B. 可以混用</span>
+        <span class="pq-o" data-k="C">C. 必须同时用</span>
+        <span class="pq-o" data-k="D">D. 都可用可不用</span>
+      </div>
+      <div class="pq-e">同一系统中混用会造成外壳带电、漏保误动，是严重违章。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">4. 判断：在零线上装设开关或熔断器是允许的。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 正确 √</span>
+        <span class="pq-o" data-k="B">B. 错误 ×</span>
+      </div>
+      <div class="pq-e">×。零线断开会造成中性点位移、外壳带 220V，规范明确禁止。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">5. 判断：可以用万用表测量线路的绝缘电阻。（　）</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 正确 √</span>
+        <span class="pq-o" data-k="B">B. 错误 ×</span>
+      </div>
+      <div class="pq-e">×。万用表电池电压太低，测不出真实绝缘；绝缘电阻必须用 500V 兆欧表。</div>
+    </div>
+  </details>
+
+
+  <a class="back" href="index.html">去刷题 · 全部题库 →</a>
+  </div>
+
+      <div class="card" id="l15">
+    <h2><span class="no">15</span>电路图怎么看：48 个图形符号一次认全</h2>
+    <p>图形符号题是理论卷里<b>“会就送分、不会就白丢”</b>的题——它不考计算，只考你认不认识这张图。下面把低压电工最常考的 <b>48 个符号</b>按 8 组列全，每个都写了“怎么认”和“现场在哪见”。</p>
+
+    <div class="key"><em>两个概念别混：</em><b>图形符号</b>是画出来的形状（方框、三角、圆圈）；<b>文字符号</b>是旁边的字母（R、C、KM、QF）。题目问“表示什么”看形状，问“代号是什么”看字母。</div>
+
+    <p><b>三步读图法</b></p>
+    <div class="ana">
+      第一步 <b>看主线</b>：一条横线穿过图形 → 串在回路里的元件（电阻、熔断器、线圈、触点、按钮）。<br>
+      第二步 <b>看形状</b>：方框＝电阻类，两条平行线＝电容，半圆串＝线圈，三角＋竖线＝二极管，圆圈＝电动机/仪表，半圆＋缺口＝插座。<br>
+      第三步 <b>看小记号</b>：斜箭头＝可调/敏感，拐脚＝稳压，双箭头向外＝发光，三横一竖＝接地，T 形帽＝按钮，虚线框＝机械联动。
+    </div>
+
+    <h3 class='sub'>一、基础无源元件（看得见、不放大）</h3>
+    <table>
+      <tr><th>图形</th><th>名称</th><th>它表示什么、怎么认</th></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h46'/><path d='M58 26h44v28H58z'/><path d='M102 40h56'/></svg></td><td style='width:100px'><b>电阻器</b><br>代号 R</td><td>长方形框，两边各引一根线，是电阻器的图形符号，文字符号 R，单位欧姆 Ω。作用是限制电流、分压、把电能变成热。识别要点：空方框就是电阻，方框里多一条直线穿过的才是熔断器。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h46'/><path d='M58 26h44v28H58z'/><path d='M108 12L66 34'/><path d='M66 34l11-1'/><path d='M66 34l1-11'/><path d='M102 40h56'/></svg></td><td style='width:100px'><b>可变电阻（电位器）</b><br>代号 RP</td><td>电阻框上斜穿一个箭头，箭头表示“可调”，所以是可变电阻或电位器，文字符号 RP。收音机音量旋钮后面就是它。注意：箭头是“可调”的意思，不是电流方向。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h58'/><path d='M70 20v40'/><path d='M80 20v40'/><path d='M80 40h78'/></svg></td><td style='width:100px'><b>电容器</b><br>代号 C</td><td>两条等长、等距的平行线，是电容器的图形符号，文字符号 C，单位法拉 F。作用：充放电、隔直通交、提高功率因数。识别要点：两条线等长是电容，一长一短或一弯才是电解电容。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h56'/><path d='M68 20v40'/><path d='M82 20c11 7 11 33 0 40'/><path d='M50 20h12M56 14v12' stroke-width='2'/><path d='M92 40h66'/></svg></td><td style='width:100px'><b>电解电容器</b><br>代号 C</td><td>一格直板、一格弯板，再加一个“+”号，是有极性的电解电容。必须正接高电位、负接低电位，接反会漏液鼓包甚至炸开。更换时耐压值和容量都要不小于原来。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h32'/><path d='M44 40q9-17 18 0q9-17 18 0q9-17 18 0q9-17 18 0'/><path d='M116 40h42'/></svg></td><td style='width:100px'><b>电感线圈（绕组）</b><br>代号 L</td><td>一串半圆表示绕组或线圈，文字符号 L，单位亨利 H。作用：通直流、阻交流、储能。电动机绕组、变压器绕组、接触器线圈在图上都画成这种半圆串。</td></tr>
+    </table>
+    <h3 class='sub'>二、敏感电阻（电阻值会“变”）</h3>
+    <table>
+      <tr><th>图形</th><th>名称</th><th>它表示什么、怎么认</th></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h46'/><path d='M58 26h44v28H58z'/><path d='M102 40h56'/><path d='M120 18l16 8'/><path d='M120 30l16 8'/><path d='M132 25l6 2-4 4z' fill='#1f3a5f' stroke='none'/></svg></td><td style='width:100px'><b>光敏电阻</b><br>代号 RG</td><td>电阻框加两个“向内”的箭头，表示受光照影响阻值，是光敏电阻。光照越强阻值越小，常用于光控开关、路灯自动控制。易错点：箭头朝外的是发光器件，朝里的是受光器件。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h46'/><path d='M58 26h44v28H58z'/><path d='M102 40h56'/><path d='M64 40h32'/><path d='M96 34v12'/><path d='M64 34v12'/></svg></td><td style='width:100px'><b>压敏电阻</b><br>代号 RV</td><td>电阻框里加一个“U”形标记，是压敏电阻，用来吸收过电压、防雷击浪涌。正常时阻值极大几乎不导电，电压一超过阈值就瞬间导通泄放能量。常并在电源进线两端。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h46'/><path d='M58 26h44v28H58z'/><path d='M102 40h56'/><text x='126' y='30' text-anchor='middle' font-size='14' fill='#1f3a5f' stroke='none' font-family='sans-serif'>t°</text><path d='M120 46l14-6'/></svg></td><td style='width:100px'><b>热敏电阻</b><br>代号 RT</td><td>电阻框旁边标温度符号 t°，是热敏电阻。温度变化时阻值明显变化，用于测温、温度补偿和过热保护（如电机绕组里的 PTC）。易错点：热敏电阻是“测温元件”，热继电器是“保护电器”，别混。</td></tr>
+    </table>
+    <h3 class='sub'>三、半导体器件（一个方向导电）</h3>
+    <table>
+      <tr><th>图形</th><th>名称</th><th>它表示什么、怎么认</th></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h48'/><path d='M60 22v36l34-18z'/><path d='M94 20v40'/><path d='M94 40h64'/></svg></td><td style='width:100px'><b>二极管</b><br>代号 VD</td><td>三角形 + 一条竖线：三角形是阳极（P），竖线是阴极（N），三角形指向就是允许电流的方向。作用：单向导电、整流。识别要点：竖线两端加拐脚是稳压管，加向外箭头是发光管。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h48'/><path d='M60 22v36l34-18z'/><path d='M94 20v40'/><path d='M94 20h-11'/><path d='M94 60h11'/><path d='M94 40h64'/></svg></td><td style='width:100px'><b>稳压二极管</b><br>代号 VS</td><td>二极管阴极两端各多一个“拐脚”，是稳压二极管，文字符号 VS（有的书用 VD）。它工作在反向击穿区，用来稳定电压；必须串限流电阻，不能单独并在线路上。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h48'/><path d='M60 22v36l34-18z'/><path d='M94 20v40'/><path d='M94 40h64'/><path d='M74 14l14-7'/><path d='M84 20l14-7'/><path d='M88 7l6 1-3 5z' fill='#1f3a5f' stroke='none'/><path d='M98 13l6 1-3 5z' fill='#1f3a5f' stroke='none'/></svg></td><td style='width:100px'><b>发光二极管</b><br>代号 VL</td><td>二极管旁边加两个向外的箭头，表示通电会发光。长脚是正极、短脚是负极。必须串限流电阻，直接接 12V 以上一下就烧；作指示灯、信号灯、显示屏用。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h58'/><path d='M70 24v32'/><path d='M70 32l28-14'/><path d='M98 18v-8'/><path d='M70 48l28 14'/><path d='M98 62v8'/><path d='M98 62l-11 1 5-9z' fill='#1f3a5f' stroke='none'/></svg></td><td style='width:100px'><b>三极管（NPN）</b><br>代号 VT</td><td>三个电极：竖线是基极 b，上面是集电极 c，下面带箭头的是发射极 e。箭头由内向外 → NPN；箭头由外向内 → PNP。记法：“N 出来”。作用是放大和开关，控制回路里常用来驱动继电器。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h48'/><path d='M60 22v36l34-18z'/><path d='M94 20v40'/><path d='M94 40h64'/><path d='M80 52l14 14h16'/></svg></td><td style='width:100px'><b>晶闸管（可控硅）</b><br>代号 VT</td><td>二极管再引出一个控制极（门极），是晶闸管，俗称可控硅。特点：一旦触发导通，门极就失去控制，只有电流降到维持电流以下才关断。常用于调压、调速、整流。</td></tr>
+    </table>
+    <h3 class='sub'>四、电机、变压与电源</h3>
+    <table>
+      <tr><th>图形</th><th>名称</th><th>它表示什么、怎么认</th></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><circle cx='85' cy='40' r='26'/><text x='85' y='47' text-anchor='middle' font-size='18' fill='#1f3a5f' stroke='none' font-family='sans-serif'>M</text><path d='M12 40h47'/><path d='M111 40h47'/></svg></td><td style='width:100px'><b>三相异步电动机</b><br>代号 M</td><td>圆圈里写 M 表示电动机。三相电动机还常标 3~ 或画出 U1V1W1、U2V2W2 六个接线端子，接成 Y 或 △。低压电工实操里最常接的就是它的正反转、点动、自锁线路。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><circle cx='85' cy='40' r='26'/><text x='85' y='47' text-anchor='middle' font-size='18' fill='#1f3a5f' stroke='none' font-family='sans-serif'>G</text><path d='M12 40h47'/><path d='M111 40h47'/></svg></td><td style='width:100px'><b>发电机</b><br>代号 G</td><td>圆圈里写 G 表示发电机（Generator），是把机械能变成电能的电源设备。和电动机 M 恰好相反：M 是用电的，G 是发电的。自备发电机作备用电源时，必须与市电可靠闭锁，防止反送电。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h44'/><path d='M56 40q9-17 18 0q9-17 18 0'/><path d='M96 16v48'/><path d='M102 16v48'/><path d='M142 40q-9-17-18 0q-9-17-18 0'/><path d='M142 40h16'/></svg></td><td style='width:100px'><b>变压器</b><br>代号 T</td><td>左右两组绕组夹着两条竖线（铁芯），表示变压器，文字符号 T。作用：改变交流电压，不改变频率、不改变功率（忽略损耗）。识别要点：两组绕组中间一定有“铁芯”两竖线。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><circle cx='85' cy='40' r='24'/><path d='M12 40h49'/><path d='M109 40h49'/><path d='M62 22q-8 18 0 36'/><path d='M108 22q8 18 0 36'/></svg></td><td style='width:100px'><b>电流互感器</b><br>代号 TA</td><td>一次导线直接穿过铁芯圆圈，二次侧接小量程电流表，把大电流按比例变小（常见 5A 或 1A）。铁律：二次侧绝对不许开路，否则产生高压伤人、损设备；拆表前必须先短接。穿心式互感器还可以靠绕圈改变倍率。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><circle cx='85' cy='40' r='24'/><path d='M12 40h49'/><path d='M109 40h49'/><path d='M72 20v40'/><path d='M98 20v40'/></svg></td><td style='width:100px'><b>电压互感器</b><br>代号 TV</td><td>一次绕组并联在高压线路上、二次侧接小量程电压表，把高电压按比例降低（常见 100V），这就是电压互感器 TV。铁律：二次侧不许短路，否则会烧毁。选表时要按变比换算实际电压。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h44'/><path d='M60 20v40'/><path d='M70 28v24'/><path d='M80 20v40'/><path d='M90 28v24'/><path d='M100 40h58'/></svg></td><td style='width:100px'><b>蓄电池（直流电源）</b><br>代号 GB</td><td>长长的两条竖线是正极、短短的两条是负极，表示蓄电池或直流电源，文字符号 GB。长线为正、短线为负，这是识图和接线的第一要务；接反会烧毁设备。</td></tr>
+    </table>
+    <h3 class='sub'>五、保护与接地（保命的画法）</h3>
+    <table>
+      <tr><th>图形</th><th>名称</th><th>它表示什么、怎么认</th></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M85 12v30'/><path d='M62 42h46'/><path d='M69 52h32'/><path d='M77 62h16'/></svg></td><td style='width:100px'><b>保护接地</b><br>代号 PE</td><td>三横一竖、上宽下窄，是标准接地符号。接到设备外壳上就是保护接地：把外壳与大地可靠连接，人体碰到漏电外壳时电流走接地体而不走人体。保护接地电阻要求 ≤4Ω，这是必考数字。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h54'/><path d='M66 28h38v24H66z'/><path d='M12 40h146'/><path d='M104 40h54'/></svg></td><td style='width:100px'><b>熔断器（保险丝）</b><br>代号 FU</td><td>矩形框中间一条直线穿过，表示熔断器，文字符号 FU。电流超过额定值一定时间后熔体熔断，切断电路，起短路保护，有的也兼过载保护。熔断后必须换同规格熔体，严禁用铜丝、铁丝代替。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h40'/><circle cx='55' cy='40' r='3.5' fill='#1f3a5f' stroke='none'/><path d='M57 38l26-15'/><path d='M86 25l10 8-10 8'/><circle cx='96' cy='40' r='3.5' fill='#1f3a5f' stroke='none'/><path d='M96 40h62'/></svg></td><td style='width:100px'><b>断路器（自动开关）</b><br>代号 QF</td><td>开关上加一个“拐弯”的自动脱扣标记，是断路器（自动开关），文字符号 QF。既有开关的通断和隔离作用，又有过载、短路自动跳闸保护，故障排除后可重复合闸，这是它比熔断器方便的地方。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><rect x='50' y='24' width='66' height='32' rx='3'/><text x='83' y='45' text-anchor='middle' font-size='15' fill='#1f3a5f' stroke='none' font-family='sans-serif'>RCD</text><path d='M12 40h38'/><path d='M116 40h42'/></svg></td><td style='width:100px'><b>剩余电流动作保护器（漏保）</b><br>代号 RCD</td><td>方框内标 RCD，是剩余电流动作保护器，也就是我们常说的“漏保”。它检测火线与零线电流是否相等，差值超过 30mA 就跳闸。注意：它是附加保护，不能代替接地和接零；人同时碰两根火线（两相触电）时它不动作。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h44'/><rect x='56' y='20' width='44' height='28' rx='2'/><text x='82' y='45' text-anchor='middle' font-size='12' fill='#1f3a5f' stroke='none' font-family='sans-serif'>FR</text><path d='M64 34q8-10 16 0'/><path d='M100 40h12'/><circle cx='96' cy='40' r='0'/><path d='M112 40h46'/></svg></td><td style='width:100px'><b>热继电器</b><br>代号 FR</td><td>方框里画一段双金属片，是热继电器，文字符号 FR。电动机过载时电流大、发热元件弯曲，推动常闭触点断开，切断接触器线圈，从而保护电动机。它只做长期过载保护，不能代替熔断器做短路保护。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h32'/><path d='M44 40l12-9v18z'/><path d='M72 40l-12-9v18z'/><path d='M72 40h36'/><path d='M58 49v9'/><path d='M47 58h22'/><path d='M52 64h12'/></svg></td><td style='width:100px'><b>避雷器（保护间隙）</b><br>代号 F</td><td>两片电极之间留间隙，下端接地，是避雷器（过电压保护器），文字符号 F。正常时不通电，出现雷击或操作过电压时瞬间导通，把能量泄放到大地，保护后面的设备。低压常用氧化锌避雷器。</td></tr>
+    </table>
+    <h3 class='sub'>六、开关与主令电器（手动操作）</h3>
+    <table>
+      <tr><th>图形</th><th>名称</th><th>它表示什么、怎么认</th></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h40'/><circle cx='55' cy='40' r='3.5' fill='#1f3a5f' stroke='none'/><path d='M57 38l28-16'/><circle cx='88' cy='40' r='3.5' fill='#1f3a5f' stroke='none'/><path d='M88 40h70'/></svg></td><td style='width:100px'><b>单极开关（手动）</b><br>代号 SA</td><td>一个动触点、一个静触点，加操作手柄，是手动单极开关，文字符号 SA。用在照明回路上就是灯开关。铁律：开关必须控制火线，接在零线上关灯后灯头仍带电，换灯泡会触电。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 30h40'/><circle cx='52' cy='30' r='3' fill='#1f3a5f' stroke='none'/><path d='M54 29l24-11'/><circle cx='86' cy='30' r='3' fill='#1f3a5f' stroke='none'/><path d='M86 30h72'/><path d='M12 50h40'/><circle cx='52' cy='50' r='3' fill='#1f3a5f' stroke='none'/><path d='M54 49l24 11'/><circle cx='86' cy='50' r='3' fill='#1f3a5f' stroke='none'/><path d='M86 50h72'/><path d='M70 20v-6h30v6' stroke-dasharray='5 4' stroke-width='1.6'/></svg></td><td style='width:100px'><b>双极开关（双控）</b><br>代号 SA</td><td>两个刀联动（虚线相连），是双极开关/双控开关，同时通断两条线。楼梯上下两个开关控制同一盏灯、三相设备的总开关都用它。注意：双控开关两端接线要“配对”，接错灯会出现“两个都能开、都不能关”的怪现象。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h40'/><circle cx='55' cy='40' r='3' fill='#1f3a5f' stroke='none'/><path d='M57 38l26-13'/><circle cx='86' cy='40' r='3' fill='#1f3a5f' stroke='none'/><path d='M86 40h72'/><path d='M70 24v-9'/><path d='M60 15h20'/></svg></td><td style='width:100px'><b>常开按钮（启动）</b><br>代号 SB</td><td>触点平时断开、按下才接通，顶上多一横是按钮帽，是常开按钮，代号 SB，一般用绿色作启动。电动机控制电路里它与接触器常开辅助触点并联，实现“按下启动、松手自锁”。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h40'/><circle cx='55' cy='40' r='3' fill='#1f3a5f' stroke='none'/><path d='M57 40h29'/><circle cx='86' cy='40' r='3' fill='#1f3a5f' stroke='none'/><path d='M86 40h72'/><path d='M70 40v-8M62 24h16M70 24v6'/><path d='M70 18v-4'/></svg></td><td style='width:100px'><b>常闭按钮（停止）</b><br>代号 SB</td><td>触点平时闭合、按下才断开，顶上同样有按钮帽，是常闭按钮，一般用红色作停止。它串在接触器线圈回路里，一按就切断线圈电源、主触点释放、电动机停转。易错点：停按钮接成常开就停不下来。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h40'/><circle cx='52' cy='40' r='3' fill='#1f3a5f' stroke='none'/><path d='M54 38l28-14'/><circle cx='84' cy='40' r='3' fill='#1f3a5f' stroke='none'/><path d='M84 40h74'/><path d='M82 24v-8'/><circle cx='82' cy='12' r='4'/></svg></td><td style='width:100px'><b>行程开关（限位开关）</b><br>代号 SQ</td><td>开关的连杆上带一个滚轮，是行程开关（限位开关），文字符号 SQ。机械运动到位置时压下滚轮，触点动作，实现到位停止、自动往返、限位保护。行车、电梯、机床的“到顶停”都靠它。</td></tr>
+    </table>
+    <h3 class='sub'>七、继电器与执行元件（自动动作）</h3>
+    <table>
+      <tr><th>图形</th><th>名称</th><th>它表示什么、怎么认</th></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><rect x='62' y='28' width='46' height='24' rx='3'/><text x='85' y='46' text-anchor='middle' font-size='15' fill='#1f3a5f' stroke='none' font-family='sans-serif'>KM</text><path d='M12 40h50'/><path d='M108 40h50'/></svg></td><td style='width:100px'><b>接触器线圈</b><br>代号 KM</td><td>矩形框代表线圈（电磁铁），是交流接触器的线圈，文字符号 KM。线圈通电产生磁力吸合衔铁，带动主触点闭合让电动机得电，同时带动辅助触点动作。线圈电压常见 220V 或 380V，接线前必须核对铭牌。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><rect x='56' y='26' width='58' height='28' rx='3'/><text x='85' y='46' text-anchor='middle' font-size='16' fill='#1f3a5f' stroke='none' font-family='sans-serif'>KA</text><path d='M12 40h44'/><path d='M114 40h44'/></svg></td><td style='width:100px'><b>中间继电器</b><br>代号 KA</td><td>方框内标 KA，是中间继电器。作用不是直接带负载，而是“扩大触点数量、传递信号、把弱电控制转成强电控制”。触点容量小，不能直接控制电动机，只能去驱动接触器线圈。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><rect x='56' y='26' width='44' height='28' rx='3'/><text x='78' y='45' text-anchor='middle' font-size='14' fill='#1f3a5f' stroke='none' font-family='sans-serif'>KT</text><path d='M60 22q11-12 22 0'/><path d='M104 40h10'/><path d='M100 40h4'/><path d='M12 40h44'/><path d='M114 40h44'/></svg></td><td style='width:100px'><b>时间继电器</b><br>代号 KT</td><td>方框上带一段延时弧线（半圆加箭头），是时间继电器，文字符号 KT。通电或断电后延迟一段时间触点才动作，用于电动机 Y-△ 降压启动、顺序控制、延时停机。分“通电延时”和“断电延时”两种，看弧线朝哪边。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><rect x='56' y='26' width='40' height='28' rx='3'/><text x='76' y='45' text-anchor='middle' font-size='14' fill='#1f3a5f' stroke='none' font-family='sans-serif'>YV</text><path d='M96 40h40'/><path d='M128 34v12'/><path d='M118 40h20'/><path d='M12 40h44'/></svg></td><td style='width:100px'><b>电磁阀</b><br>代号 YV</td><td>线圈框外加一根可动的阀杆，是电磁阀，文字符号 YV。通电吸合打开/关闭管路，控制水、气、油。消防、空调、气动设备上大量使用；失电时的开闭状态（常开/常闭）必须搞清，否则断电会出事。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><rect x='56' y='26' width='40' height='28' rx='3'/><text x='76' y='45' text-anchor='middle' font-size='14' fill='#1f3a5f' stroke='none' font-family='sans-serif'>YA</text><path d='M96 40h34'/><path d='M130 32v16'/><path d='M12 40h44'/></svg></td><td style='width:100px'><b>电磁铁（制动器）</b><br>代号 YA</td><td>线圈框外接一个衔铁（横杠），是电磁铁或电磁制动器，文字符号 YA。通电吸合松开制动，断电靠弹簧抱闸——所以起重机、卷扬机断电时是“刹车”状态，这是安全设计。</td></tr>
+    </table>
+    <h3 class='sub'>八、照明、插座、母线与计量</h3>
+    <table>
+      <tr><th>图形</th><th>名称</th><th>它表示什么、怎么认</th></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><circle cx='85' cy='40' r='24'/><path d='M68 23l34 34M102 23l-34 34'/><path d='M12 40h49'/><path d='M109 40h49'/></svg></td><td style='width:100px'><b>白炽灯（照明灯）</b><br>代号 EL</td><td>圆圈里画叉，表示照明灯具（白炽灯/通用灯），文字符号 EL。接线要点：螺口灯座的中心触点接火线、螺纹接零线，这样换灯泡时手碰不到带电部分；开关控制火线。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h38'/><rect x='50' y='32' width='70' height='16' rx='8'/><path d='M50 32v16'/><path d='M120 32v16'/><path d='M120 40h38'/></svg></td><td style='width:100px'><b>荧光灯（日光灯）</b><br>代号 FL</td><td>长条圆角矩形是荧光灯管，文字符号 FL。它必须配镇流器（或电子镇流器）和启辉器才能点亮，不能像白炽灯那样直接接 220V。老式电感镇流器功率因数低，坏了常表现为“灯管两头红、不亮”。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h44'/><rect x='56' y='26' width='58' height='28' rx='2'/><path d='M64 40l8-8 8 8 8-8 8 8 8-8'/><path d='M114 40h44'/></svg></td><td style='width:100px'><b>电热器（加热元件）</b><br>代号 EH</td><td>方框里画锯齿形（电阻丝），表示电热元件，如电炉、电热水器、电热毯的发热体。它把电能几乎全部变成热，功率大、电流大，导线截面和保护装置必须按额定电流选。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M58 62a27 27 0 0 1 54 0'/><path d='M72 62V46'/><path d='M98 62V46'/><path d='M85 62v12'/></svg></td><td style='width:100px'><b>单相三孔插座</b><br>代号 XS</td><td>半圆里有三个孔，是单相三孔插座，文字符号 XS。接线铁律：左零右火上接地（面对插座看）。地线孔在上方或下方，必须接 PE 线，绝不能空着或接到零线上。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M62 62a23 23 0 0 1 46 0'/><path d='M74 62V48'/><path d='M96 62V48'/></svg></td><td style='width:100px'><b>单相两孔插座</b><br>代号 XS</td><td>半圆里两个孔，是单相两孔插座，只有火线和零线，没有保护地线。只能接双重绝缘的Ⅱ类电器（如塑料外壳充电器）；金属外壳电器必须用三孔插座，否则漏电时外壳带电。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M52 66a33 33 0 0 1 66 0'/><path d='M68 66V50'/><path d='M85 66V46'/><path d='M102 66V50'/><path d='M85 66v10'/></svg></td><td style='width:100px'><b>三相四孔插座</b><br>代号 XS</td><td>半圆里四个孔（三根相线 + 一根保护地线），是三相四孔插座，供三相设备使用。四个孔不能接错：三根相线接 L1L2L3，最上面（或最大）的孔接地线。接错会导致电动机反转或外壳带电。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M42 26h34v28H42z'/><path d='M76 32h24'/><path d='M76 48h24'/><path d='M100 32h10v-6'/><path d='M100 48h10v6'/></svg></td><td style='width:100px'><b>插头</b><br>代号 XP</td><td>插头与插座是一对：插头插入插座取电。识图时注意插脚数量——两脚无地线、三脚有地线。插头、插座、耦合器都属于“插接器件”，检修时必须先拔插头断电，不能带电插拔大功率负载。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M20 26h130' stroke-width='5'/><path d='M20 40h130' stroke-width='5'/><path d='M20 54h130' stroke-width='5'/></svg></td><td style='width:100px'><b>母线</b><br>代号 W</td><td>三条粗实线并排，表示三相母线（汇流排），是配电柜里集中分配电能的主干线。母线带电且裸露，操作时安全距离 ≥0.1m；检修必须停电、验电、装设接地线、挂标示牌。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M12 40h62'/><circle cx='85' cy='40' r='7' fill='#fff'/><path d='M92 40h66'/></svg></td><td style='width:100px'><b>接线端子</b><br>代号 XT</td><td>导线上画一个小圆圈，表示接线端子（端子排），文字符号 XT。用于导线与设备、导线与导线的可拆卸连接。要求：一个端子最多接两根线，多股线要压接端子或搪锡，不能把铜丝直接拧成一股。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><rect x='57' y='22' width='56' height='36' rx='3'/><text x='85' y='47' text-anchor='middle' font-size='17' fill='#1f3a5f' stroke='none' font-family='sans-serif'>Wh</text><path d='M12 40h45'/><path d='M113 40h45'/></svg></td><td style='width:100px'><b>电能表（电度表）</b><br>代号 PJ</td><td>方框内标 Wh（瓦时），是电能表，文字符号 PJ，计量用电量。单相表接线：1、3 进，2、4 出（1 火进、2 火出、3 零进、4 零出）。装表后要核对转向，反转说明进出线接错。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><circle cx='85' cy='40' r='24'/><text x='85' y='47' text-anchor='middle' font-size='18' fill='#1f3a5f' stroke='none' font-family='sans-serif'>A</text><path d='M12 40h49'/><path d='M109 40h49'/></svg></td><td style='width:100px'><b>电流表</b><br>代号 PA</td><td>圆圈里写 A，是电流表，文字符号 PA。必须串联在被测电路中，且要选合适量程；测量大电流时配电流互感器。铁律：电流表绝不能并联在电源两端，那等于短路。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><circle cx='85' cy='40' r='24'/><text x='85' y='47' text-anchor='middle' font-size='18' fill='#1f3a5f' stroke='none' font-family='sans-serif'>V</text><path d='M12 40h49'/><path d='M109 40h49'/></svg></td><td style='width:100px'><b>电压表</b><br>代号 PV</td><td>圆圈里写 V，是电压表，文字符号 PV。必须并联在被测两点之间，内阻很大所以不会影响电路。测量高压要配电压互感器。铁律：电压表不能串联，串进去电路就断了。</td></tr>
+        <tr><td style='width:70px'><svg viewBox='0 0 170 80' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='#1f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><circle cx='85' cy='40' r='24'/><text x='85' y='47' text-anchor='middle' font-size='18' fill='#1f3a5f' stroke='none' font-family='sans-serif'>W</text><path d='M12 40h49'/><path d='M109 40h49'/></svg></td><td style='width:100px'><b>功率表</b><br>代号 PW</td><td>圆圈里写 W，是功率表，文字符号 PW，直接读出有功功率（瓦）。它同时有电压线圈和电流线圈，接线比普通表复杂，接反指针会反转。电工证考试里一般只考“认符号”。</td></tr>
+    </table>
+
+    <p><b>最容易看错的六组</b></p>
+    <table>
+      <tr><th style='width:190px'>容易混</th><th>一句话区分</th></tr>
+      <tr><td>电阻 vs 熔断器</td><td>都是方框：<b>方框里一条直线穿过</b>是熔断器（FU），空方框是电阻（R）。</td></tr>
+      <tr><td>电容 vs 触点</td><td>电容是<b>两条等长平行线</b>；触点是两条短竖线，还带引线和圆点。</td></tr>
+      <tr><td>稳压管 vs 发光管</td><td>竖线两端<b>加拐脚</b>＝稳压管（VS/DW）；再加<b>两个向外箭头</b>＝发光二极管（LED）。</td></tr>
+      <tr><td>开关 vs 按钮</td><td>只有刀和触点＝手动开关（SA）；<b>顶上多一个按钮帽（T 形）</b>＝按钮（SB），带复位弹簧所以“按住才通”。</td></tr>
+      <tr><td>接触器 vs 继电器</td><td>都画一个方框线圈（KM / KA）：<b>接触器主回路带灭弧罩、通大电流</b>；继电器只切换控制回路的小电流。图上按文字符号认。</td></tr>
+      <tr><td>插座 2 孔 / 3 孔 / 4 孔</td><td>看半圆里的<b>孔数和朝向</b>：两孔（XS2）无地、三孔（XS）带地、四孔（XS4）给三相设备。</td></tr>
+    </table>
+
+    <div class="warn"><em>考场提醒：</em>图形题的四个选项通常是“同类不同种”（电阻、熔断器、线圈都画成方的）。用三个特征排除最快：<b>有没有直线穿过 → 有没有拐脚 → 有没有箭头</b>。凭印象猜，错得最冤。</div>
+
+    <div class="key"><em>背记口诀：</em>方框电阻线穿熔断，两线电容半圆感；三角竖线单向导，拐脚稳压箭头亮；圆圈电机半圆插，三横一竖接大地。</div>
+
+      <details class="prac"><summary class="prac-t">📝 本讲练习 · 5 题</summary>
+    <div class="pq" data-a="B">
+      <div class="pq-q">1. 方框中间有一条直线穿过，表示（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 电阻 R</span>
+        <span class="pq-o" data-k="B">B. 熔断器 FU</span>
+        <span class="pq-o" data-k="C">C. 接触器线圈 KM</span>
+        <span class="pq-o" data-k="D">D. 电容器 C</span>
+      </div>
+      <div class="pq-e">方框里穿一条直线是熔断器（熔体）；空方框才是电阻。记住：有线穿过就是熔丝。</div>
+    </div>
+    <div class="pq" data-a="A">
+      <div class="pq-q">2. 图中两条等长的平行线表示（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 电容器 C</span>
+        <span class="pq-o" data-k="B">B. 开关 SA</span>
+        <span class="pq-o" data-k="C">C. 电感线圈 L</span>
+        <span class="pq-o" data-k="D">D. 电池 GB</span>
+      </div>
+      <div class="pq-e">两条平行线是电容；一格直板一格弯板带“+”号是电解电容。</div>
+    </div>
+    <div class="pq" data-a="D">
+      <div class="pq-q">3. 三角形加一条竖线表示的元件是（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 三极管 VT</span>
+        <span class="pq-o" data-k="B">B. 晶闸管 SCR</span>
+        <span class="pq-o" data-k="C">C. 压敏电阻 RV</span>
+        <span class="pq-o" data-k="D">D. 二极管 VD</span>
+      </div>
+      <div class="pq-e">三角形是阳极、竖线是阴极，箭头方向就是电流允许方向。另外多一根控制极的是晶闸管。</div>
+    </div>
+    <div class="pq" data-a="C">
+      <div class="pq-q">4. 三条横线、上面最长下面最短（上宽下窄），表示（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 雷电</span>
+        <span class="pq-o" data-k="B">B. 电容</span>
+        <span class="pq-o" data-k="C">C. 保护接地 PE</span>
+        <span class="pq-o" data-k="D">D. 屏蔽</span>
+      </div>
+      <div class="pq-e">三横一竖、上宽下窄就是接地符号，表示设备外壳接到保护接地。</div>
+    </div>
+    <div class="pq" data-a="B">
+      <div class="pq-q">5. 圆圈里面写 M，表示（　）。</div>
+      <div class="pq-os">
+        <span class="pq-o" data-k="A">A. 仪表</span>
+        <span class="pq-o" data-k="B">B. 三相异步电动机 M</span>
+        <span class="pq-o" data-k="C">C. 电磁铁</span>
+        <span class="pq-o" data-k="D">D. 发电机 G</span>
+      </div>
+      <div class="pq-e">圆圈里 M 是电动机、G 是发电机；仪表圆圈里要写 A、V、W 等字母。</div>
+    </div>
+  </details>
+  <a class="back" href="index.html?m=M9">去刷题 · M9 图形符号 →</a>
+  </div>
+
+<div class="foot">依据《低压电工作业人员安全技术培训大纲和考核标准》(2025) 与应急管理部令第 19 号（2026-06-01 施行）编写<br>仅供零基础入门理解，考试以当地应急管理部门题库为准</div>
 </div>
+
+
+<script>
+document.querySelectorAll('.pq').forEach(function(pq){
+  var a = pq.getAttribute('data-a');
+  pq.querySelectorAll('.pq-o').forEach(function(o){
+    o.addEventListener('click', function(){
+      if (pq.getAttribute('data-done')) return;
+      pq.setAttribute('data-done','1');
+      var k = o.getAttribute('data-k');
+      pq.querySelectorAll('.pq-o').forEach(function(x){
+        if (x.getAttribute('data-k') === a) x.classList.add('ok');
+      });
+      if (k !== a) o.classList.add('bad');
+      var e = pq.querySelector('.pq-e');
+      if (e) e.style.display = 'block';
+    });
+  });
+});
+</script>
 </body>
 </html>
