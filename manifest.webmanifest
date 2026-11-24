@@ -1,7 +1,7 @@
 {
   "name": "低压电工证实战刷题",
   "short_name": "电工刷题",
-  "description": "低压电工作业证 148 道核心题，按 2026 年新规校正，离线可用。",
+  "description": "低压电工作业证 364 道核心题，按 2026 年新规校正，离线可用。",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
